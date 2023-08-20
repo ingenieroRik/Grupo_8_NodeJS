@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav> 
+            <picture>
+                <a href="./index.html" alt="logo" class="logo">
+                    <img src="./images/branding/logo_light_horizontal.svg" alt="" >
+                </a>
+            </picture>
+            <ul class="nav-link">
+                <li>
+                    <a href="./index.html">VER TIENDA</a>
+                </li>
+                <li>
+                    <a href="./admin.html">ADMIN</a>
+                </li>
+                <li>
+                    <a href="./index.html">SALIR</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>crear nuevo item</h1>
+        <form>
+            <div>
+                <label for="categrotia">Categoria</label>
+                <select name="categoria" id="categoria">
+                    <option value="" disabled selected>Seleccionar</option>
+                    <option value="1">a definir</option>
+                    <option value="2">a definir</option>
+                    <option value="3">a definir</option>
+                </select>
+                <label for="licencia">Licencia</label>
+                <select name="licencia" id="licencia">
+                    <option value="" disabled selected>Seleccionar</option>
+                    <option value="1">a definir</option>
+                    <option value="2">a definir</option>
+                    <option value="3">a definir</option>
+                </select>            
+            </div>
+            <div>
+                <label for="nombre">Nombre del producto</label>
+                <input type="text" id="nombre" placeholder="Ingrese nombre del producto" required>
+            </div>
+            <textarea id="descripcion" cols="30" rows="10" placeholder="Descripcion del producto"></textarea>
+            <div>
+                <label for="sku">sku</label>
+                <input type="text" placeholder="alfanumerico">
+                <label for="precio">Precio</label>
+                <input type="number" placeholder="$0.000,00">
+                <label for="stock">Stock</label>
+                <input type="number" id="stock" min="0" placeholder="0">
+            </div>
+            <div>
+                <label for="descuento">Descuento</label>
+                <input type="number" id="descuento" min="0" max="100" step="5" placeholder="0%">
+                <label for="cuotas">Cuotas</label>
+                <select name="cuotas" id="cuotas">
+                    <option value="" disabled selected>Eleguir cuotas</option>
+                    <option value="1">a definir</option>
+                    <option value="2">a definir</option>
+                    <option value="3">a definir</option>
+                </select>  
+            </div>
+            <div>
+                <label for="imagen">Imagen:</label>
+                <input type="file" name="imagen" id="imagen" accept="image/jpeg, image/png">
+            </div>
+            <div>
+                <input type="submit" value="Agregar Producto">
+                <input type="reset" value="Limpiar">
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <section>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./views/shop.html">SHOP</a>
+                    </li>
+                    <li>
+                        <a href="./views/register.html">REGISTRARSE</a>
+                    </li>
+                    <li>
+                        <a href="./views/login.html">LOGIN</a>
+                    </li>
+                    <li>
+                        <a href="./views/contact.html">CONTACTO</a>
+                    </li>
+                </ul>
+                <picture>
+                    <img src="./images/branding/isotype.svg" alt="isotipo de Funkoshop">
+                </picture>
+            </nav>
+        </section>
+        <p>All Rights Reserver 2023 - Funkoshop & Copy</p>
+    </footer>
+</body>
+</html>
