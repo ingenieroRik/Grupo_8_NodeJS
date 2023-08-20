@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!--HEADER-->
+    <header>
+      <nav>
+        <picture>
+          <a href="./index.html" alt="logo">
+            <img src="../images/branding/logo_light_horizontal.svg" alt="" />
+          </a>
+        </picture>
+        <ul>
+          <li>
+            <a href="./views/shop.html">SHOP</a>
+          </li>
+          <li>
+            <a href="./views/contact.html">CONTACTO</a>
+          </li>
+          <li>
+            <a href="./views/login.html">LOGIN</a>
+          </li>
+          <li>
+            <a href="./views/cart.html">
+              <img src="../images/icons/cart-icon.svg" alt="icono de carrito" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--FIN HEADER-->
+
+    <!--SHOP-->
+    <main id="shop">
+      <!--CONTAINER1_FILTROS_BUSQUEDA-->
+      <section class="filtros">
+        <div class="filtro-nombre">
+          <label class="buscar_por_item">BUSCAR</label>
+          <input type="text" id="busqueda" placeholder="item o categoria" />
+        </div>
+        <div class="filtro-orden">
+          <label class="ordenar-por">ORDENAR POR</label>
+          <select id="dropdown" name="dropdown">
+            <option value="a-z">A-Z</option>
+            <option value="z-a">Z-A</option>
+            <option value="mayorprecio">Mayor precio</option>
+            <option value="menorprecio">Menor precio</option>
+          </select>
+        </div>
+        <div class="filtro-precio">
+          <label for="filtro-precio">PRECIO</label>
+          <label for="precio-min">MIN</label>
+          <input type="number" id="minimo" placeholder="0" />
+          <label for="precio-max">- MAX</label>
+          <input type="number" id="maximo" placeholder="0" />
+        </div>
+        <div class="filtro-categoria">
+          <label for="filtro-categoria">FILTRAR</label>
+          <input type="checkbox" name="filtro" />
+          <label for> NUEVOS</label>
+          <input type="checkbox" name="filtro" />
+          <label for> OFERTAS</label>
+          <input type="checkbox" name="filtro" />
+          <label for> EDICIÓN ESPECIAL</label>
+          <input type="checkbox" name="filtro" />
+          <label for> FAVORITOS</label>
+        </div>
+      </section>
+
+      <!--CONTAINER2_CATALOGO-->
+      <!-- 
+        seria bueno hacer las cards como componente reutilizable? -->
+      <section>
+        <div class="catalogo">
+          <ul class="card-items">
+            <li class="item1" id="starwars1">
+              <img src="../images/star-wars/trooper-1.webp" />
+              <p>STAR WARS</p>
+              <h3>STORMTROOPER LIGHTSABER</h3>
+              <p>$1799,99</p>
+              <small> 3 CUOTAS SIN INTERES</small>
+            </li>
+            <li class="item2" id="pokemon1">
+              <img src="../images/pokemon/pidgeotto-1.webp" />
+              <p>POKEMON</p>
+              <h3>PIDGEOTTO</h3>
+              <p>$1799,99</p>
+              <small> 3 CUOTAS SIN INTERES</small>
+            </li>
+            <li class="item3" id="harrypotter1">
+              <img src="../images/harry-potter/luna-1.webp" />
+              <p>HARRY POTTER</p>
+              <h3>LUNA LOVEGOOD LION MASK</h3>
+              <p>$1799,99</p>
+              <small> 3 CUOTAS SIN INTERES</small>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--PAGINACION-->
+      <section>
+        <div class="paginas">
+          <a class="link_paginas" href="#"><</a>
+          <a class="link_paginas pagina-seleccionada" href="#">1</a>
+          <a class="link_paginas" href="#">2</a>
+          <a class="link_paginas" href="#">3</a>
+          <a class="link_paginas" href="#">4</a>
+          <a class="link_paginas" href="#">5</a>
+          <a class="link_paginas" href="#">6</a>
+          <a class="link_paginas" href="#">7</a>
+          <a class="link_paginas" href="#">8</a>
+          <a class="link_paginas" href="#">9</a>
+          <a class="link_paginas" href="#">10</a>
+          <a class="link_paginas" href="#">></a>
+        </div>
+      </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+      <section>
+        <nav>
+          <ul>
+            <li>
+              <a href="./views/shop.html">SHOP</a>
+            </li>
+            <li>
+              <a href="./views/register.html">REGISTRARSE</a>
+            </li>
+            <li>
+              <a href="./views/login.html">LOGIN</a>
+            </li>
+            <li>
+              <a href="./views/contact.html">CONTACTO</a>
+            </li>
+          </ul>
+          <picture>
+            <img
+              src="../images/branding/isotype.svg"
+              alt="isotipo de Funkoshop"
+            />
+          </picture>
+        </nav>
+      </section>
+      <p>All Rights reserved 2023 - Funkoshop & copy;</p>
+    </footer>
+    <!--FIN FOOTER-->
+  </body>
+</html>
