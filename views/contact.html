@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funkoshop Grupo 8</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <picture>
+                <a href="../index.html" alt="logo">
+                    <img src="../images/branding/logo_light_horizontal.svg" alt="" >
+                </a>
+            </picture>
+            <ul>
+                <li>
+                    <a href="./shop.html">SHOP</a>
+                </li>
+                <li>
+                    <a href="./contact.html">CONTACTO</a>
+                </li>
+                <li>
+                    <a href="./login.html">LOGIN</a>
+                </li>
+                <li>
+                    <a href="./cart.html">
+                        <img src="./images/icons/cart-icon.svg" alt="icono de carrito">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <p><strong>FUNCOSHOP S.A.</strong> Completá el formulario y dentro de las próximas 72hs hábiles te responderemos</p>
+        <form>
+            <div>
+                <label for="nombreCliente">Nombre:</label>
+                <input type="text" id="nombreCliente" name="nombreCliente" placeholder="Su Nombre">
+                <label for="mailCliente">E-mail:</label>
+                <input type="email" id="mailCLiente" name="mailCLiente" placeholder="Su Correo">
+            </div>
+            <div>
+                <label for="telefonoCliente">Telefono:</label>
+                <input type="number" id="telefonoCliente" name="telefonoCliente" placeholder="1103034566">
+                <select name="motivo" id="motivo">
+                    <option value="">Consulta</option>
+                    <option value="">Falla del producto</option>
+                    <option value="">No es lo que pedi</option>
+                    <option value="">Demora en la entrega</option>
+                    <option value="">No es lo publicado</option>
+                    <option value="">Otro motivo</option>
+                </select>
+            </div>
+            <div>
+                <label for="dniCliente">DNI:</label>
+                <input type="number" id="dniCliente" name="dniCliente" placeholder="Su Documento">
+                <label for="nPedido">N° del Pedido:</label>
+                <input type="text" id="nPedido" name="nPedido" placeholder="N° pedido alfanumerico">
+            </div>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10">Te leemos...</textarea>
+            <input type="file" accept="image/jpg, image/png">
+            <p>Sube una imagen si lo requieres</p>
+            <input type="submit" value="Enviar Consulta">
+        </form>
+    </main>
+
+
+
+    <footer>
+        <section>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./shop.html">SHOP</a>
+                    </li>
+                    <li>
+                        <a href="./register.html">REGISTRARSE</a>
+                    </li>
+                    <li>
+                        <a href="./login.html">LOGIN</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">CONTACTO</a>
+                    </li>
+                </ul>
+                <picture>
+                    <img src="../images/branding/isotype.svg" alt="isotipo de Funkoshop">
+                </picture>
+            </nav>
+        </section>
+        <p>All Rights Reserved 2023 - Funkoshop &copy;</p>
+    </footer>
+    
+</body>
+</html>
