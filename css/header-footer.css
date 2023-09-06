@@ -2,7 +2,7 @@
     /* paleta de colores */
      
     --gris: #30343F;
-    --grisClaro: #4F4F4F;
+    --gris-claro: #4F4F4F;
     --rojo: #FF3333;
     --azul: #1D84B5;
     --blanco: #fff;
@@ -59,7 +59,6 @@ html{
 
 a {
     text-decoration: none;
-    /*font-size: 2em;*/
     font-family: inherit;
     color: inherit;
 }
