@@ -1,29 +1,27 @@
 :root {
     /* paleta de colores */
-     
-    --gris: #30343F;
-    --gris-claro: #4F4F4F;
-    --rojo: #FF3333;
-    --azul: #1D84B5;
-    --blanco: #fff;
-    --negro: #000;
+    --primary-solid:#ff3333;
+    --primary-900:rgba(255, 51, 51, 0.9);
+    --primary-500:rgba(255, 51, 51, 0.5);
+    --primary-300:rgba(255, 51, 51, 0.3);
 
-    --negro-claro:#1f1f1f;
-    --blanco-claro: #fafaff;
-    
+    --secondary-solid:#1d84b5;
+    --secondary-900:rgba(29, 132, 181, 0.9);
+    --secondary-500:rgba(29, 132, 181, 0.5);
+    --secondary-300:rgba(29, 132, 181, 0.3);
+
+    --dark-solid:#1f1f1f;
+    --dark-900:rgba(31, 31, 31,  0.9);
+    --dark-500:rgba(31, 31, 31, 0.5);
+    --dark-300:rgba(31, 31, 31, 0.3);
+
+    --dark-bg-solid: #30343f;
+    --light-bg-solid: #fafaff;
+    --light-font-solid:#ffffff;
 
     /* tipografia */
-  
-    --fuentePrincipal: 'Inter', sans-serif;
-    --fuenteSecundaria: 'Raleway', sans-serif;
-
-    
-    /* PESO TIPOGRAFICO */
-    
-    --light: 200;
-    --regular: 400;
-    --medium: 500;
-    --bold: 700;
+    --base-font: 'Inter', sans-serif;
+    --alternative-font:'Raleway', sans-serif;
 
     /* font size */
     --font-display: 4.6em;
@@ -52,28 +50,27 @@
     box-sizing: border-box;
 }
 html{
-    font-family: var(--fuenteSecundaria);
+    font-family: var(--base-font);
     font-size: 62.5%;
-    color: var(--negro-claro);
+    color: var(--dark-solid);
 }
-
 a {
     text-decoration: none;
+    /*font-size: 2em;*/
     font-family: inherit;
     color: inherit;
 }
 header,
 footer {
-    font-family: var(--fuentePrincipal);
-    color:var(--blanco);
+    font-family: var(--alternative-font);
+    color:var(--light-font-solid);
 }
-ul, ol , li {
+ul, ol {
     list-style-type: none;   
 }
 p {
     font-size: 1.8em;
 }
-
 img {
     width: 100%;
 }
@@ -86,7 +83,7 @@ img {
 /* estilos del Header */
 
 header {
-    background-color: var(--gris);
+    background-color: var(--dark-bg-solid);
     padding: var(--spacing-36);
 }
 .navbar {
@@ -110,7 +107,7 @@ max-width: 300px;
     position: relative;
 }
 .navbar__link:hover {
-    background-color: var(--rojo);
+    background-color: var(--primary-900);
 }
 .with-icon {
     display: flex;
@@ -123,7 +120,7 @@ max-width: 300px;
 .submenu {
     display: none;
     position: absolute;
-    background-color: var(--gris);
+    background-color: var(--dark-bg-solid);
     width: 300px;
     z-index: 3;
    
@@ -137,24 +134,20 @@ max-width: 300px;
     padding: var(--spacing-8)var(--spacing-16);
     font-size: var(--font-medium);
     transition: background .3s ease-in-out;
-   
-
  }
  .submenu__link:hover {
-    background-color: var(--rojo);
+    background-color: var(--primary-900);
  }
  .icon-header {
-    color: var(--blanco);
+    color: var(--light-font-solid);
  }
 
 
 
-
-
-
+ 
  /* estilos del footer  */
 .footer {
-    background-color: var(--gris);
+    background-color: var(--dark-bg-solid);
     padding: var(--spacing-68);
 }
 .footer__copy {

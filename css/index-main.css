@@ -20,7 +20,9 @@
     position: absolute;
     top:0;
     left: 0;
-    backdrop-filter: blur(2px) brightness(.9);  
+    backdrop-filter: blur(2px) brightness(.9);
+   
+    
 }
 .hero__contenido {
     display: flex;
@@ -31,31 +33,29 @@
     position: relative;
 }
 .hero__title {
-    font-family: var(--fuentePrincipal);
+    font-family: var(--alternative-font);
     font-size: var(--font-jumbo);
-    color: var(--blanco);
+    color: var(--light-font-solid);
 }
 .hero__text {
-    font-family: var(--fuenteSecundaria);
-    color: var(--blanco);
+    font-family: var(--alternative-font);
+    color: var(--light-font-solid);
     font-size: var(--font-medium);
 }
 .hero__link {
     display: inline-block;
     font-size: var(--font-medium);
-    background-color: var(--blanco-claro);
+    background-color: var(--light-bg-solid);
     padding: var(--spacing-12) var(--spacing-68);
     border-radius: 50px;
     font-weight: 500;
     transition: all .3s ease-in-out;
 }
-
 .hero__link:hover {
-    background-color: var(--rojo);
-    color: var(--blanco);
+    background-color: var(--primary-900);
+    color: var(--light-font-solid);
 }
 /*  fin estilos de hero section */
-
 
 /* estilos de las colecciones */
 .coleccion {
@@ -75,53 +75,35 @@
     order: -1;
 }
 .coleccion__tittle {
-    font-family: var(--fuenteSecundaria);
+    font-family: var(--alternative-font);
     font-size: var(--font-display);
     font-weight: 500;
+
 }
 .coleccion__text {
-    font-family: var(--fuenteSecundaria);
+    font-family: var(--alternative-font);
     font-size: var(--font-large);
     font-weight: 300;
-    border-bottom: 2px solid var(--rojo);
+    border-bottom: 2px solid var(--primary-solid);
     padding-bottom: var(--spacing-20);
 }
 .coleccion__link {
     display: inline-block;
     font-size: var(--font-medium);
-    background-color: var(--gris);
-    color: var(--blanco);
+    background-color: var(--dark-bg-solid);
+    color: var(--light-font-solid);
     padding:var(--spacing-16) var(--spacing-36) ;
     border-radius: 50px;
     font-weight: 500;
     transition: .3s ease-in-out;
 }
 .coleccion__link:hover {
-    background-color: var(--rojo);
+    background-color: var(--primary-900);
 
 }
+
 /* fin estilos de coleecciones */
 
-
-/* estilos para el slider inferior */
-
-.slider {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-36);
-    margin: var(--spacing-68) auto;
-}
-.slider__items {
-    display: flex;
-    gap: var(--spacing-24);
-
-}
-
-.slider__tittle {
-    font-family: var(--fuenteSecundaria);
-    font-size: var(--font-display);
-    text-transform: uppercase;
-}
 .card-item__cover {
     display: flex;
     position: relative;
@@ -129,8 +111,8 @@
 .card-item__tag {
     font-size: var(--font-xsmall);
     text-transform: uppercase;
-    background-color: var(--rojo);
-    color: var(--blanco);
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
     padding: var(--spacing-8) var(--spacing-12);
     position: absolute;
     right: 0;
@@ -169,7 +151,7 @@
 }
 .card-item__promo{
     font-size: var(--font-small);
-    color: var(--azul);
+    color: var(--secondary-solid);
     font-weight: 700;
 }
 

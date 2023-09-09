@@ -1,0 +1,64 @@
+/*** -- VARIABLES -- ***/
+:root{
+    /** TIPOGRAFIA **/
+    --fuentePrincipal: 'Raleway',
+    sans-serif;
+    --fuenteSecundaria: 'Inter',
+    sans-serif;
+    
+    /* PESO TIPOGRAFICO */
+    
+    --light: 200;
+    --regular: 400;
+    --medium: 500;
+    --bold: 700;
+    
+    /** COLORES **/
+    
+    --gris: #30343F;
+    --grisClaro: #4F4F4F;
+    --rojo: #FF3333;
+    --azul: #1D84B5;
+    --blanco: #fff;
+    --negro: #000;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+p{
+    font-size: 2rem;
+    font-family: var(--fuenteSecundaria);
+    color: var(--grisClaro);
+}
+
+a{
+    text-decoration: none;
+    color: var(--blanco);
+    font-family: var(--fuentePrincipal);
+    font-size: 2rem;
+    font-weight: var(--medium);
+    &:hover{
+        background-color: var(--rojo);
+    }
+}
+
+li{
+    list-style: none;
+}
+
+h2, h3{
+    color: var(--negro);
+}
+
+
