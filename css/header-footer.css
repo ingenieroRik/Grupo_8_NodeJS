@@ -90,6 +90,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .navbar__logo {
 max-width: 300px;
@@ -142,8 +143,17 @@ max-width: 300px;
     color: var(--light-font-solid);
  }
 
-
-
+@media (max-width: 802px){
+    .navbar {
+        justify-content: center;
+        gap: var(--spacing-20);
+    }
+}
+@media (max-width: 530px){
+    .navbar__menu{
+      display: none;
+    }
+}
  
  /* estilos del footer  */
 .footer {
