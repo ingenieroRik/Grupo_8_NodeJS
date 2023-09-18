@@ -149,7 +149,8 @@ max-width: 300px;
 @media (max-width: 530px){
     .navbar__link{
       font-size: var(--font-small);
-      padding: 0;;
+      padding: 0 ;
+      padding-bottom: 15px;
     }
 }
  
