@@ -70,6 +70,7 @@
     flex-direction: column;
     gap: var(--spacing-24);
     align-items: start;
+    padding: 0 15px;
 }
 .coleccion:nth-child(3) .coleccion__cover {
     order: -1;
@@ -162,5 +163,13 @@
     }
     100% {
         opacity: 1;
+    }
+}
+@media (max-width: 620px){
+    .coleccion__tittle {
+        font-size: var(--font-medium);  
+    }
+    .coleccion__text {
+        font-size: var(--font-small);
     }
 }

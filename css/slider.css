@@ -6,13 +6,9 @@
     flex-direction: column;
     gap: var(--spacing-36);
     margin: var(--spacing-68) auto;
+    
 }
-/*
-.slider__items {
-    display: flex;
-    gap: var(--spacing-24);
-}
-*/
+
 iconify-icon {
     color: var(--dark-bg-solid);
    
@@ -28,7 +24,14 @@ iconify-icon {
 }
 
 .slider__tittle {
+    text-align:center;
     font-family: var(--alternative-font);
     font-size: var(--font-display);
     text-transform: uppercase;
+}
+@media (max-width: 620px){
+    .slider {
+        display: none;
+    }
+    
 }
