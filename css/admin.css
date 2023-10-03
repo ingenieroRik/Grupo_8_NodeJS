@@ -1,0 +1,66 @@
+.loupe {
+    width: 30.8px;
+    height: 30.76;
+}
+
+.input {
+  width: 700,76px;
+  height: 44,28;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+      
+}
+
+.main-container {
+    margin-left: 110px;
+    width: 1120px;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+
+}
+
+h1 {
+    font-size: 42px;
+}
+
+.item-list {
+    width: 1126px;
+    height: 928,95px;
+    font-weight:500;
+    font-size: 24px;
+    line-height: 60.85px;
+    letter-spacing: 4%;
+}
+
+
+.add-container{
+/* Group 63 */
+
+display: flex;
+width: 198px;
+height: 52px;
+left: 1038px;
+top: 260.28px;
+align-items: center;
+justify-content: end;
+font-weight: 700;
+font-size: 24px;
+line-height: 29,05px;
+letter-spacing: 4%;
+align-items: right;
+
+
+}
+
+.product-list-tittle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

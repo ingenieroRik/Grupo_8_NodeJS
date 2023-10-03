@@ -4,28 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funkoshop Edit</title>
+    <link rel="stylesheet" href="../css/header-footer.css" />
 </head>
 <body>
     <header>
-        <nav> 
-            <picture>
-                <a href="../index.html" alt="logo" class="logo">
-                    <img src="../images/branding/logo_light_horizontal.svg" alt="" >
-                </a>
-            </picture>
-            <ul class="nav-link">
-                <li>
-                    <a href="../index.html">VER TIENDA</a>
-                </li>
-                <li>
-                    <a href="./admin.html">ADMIN</a>
-                </li>
-                <li>
-                    <a href="../index.html">SALIR</a>
-                </li>
-            </ul>
+        <nav class="navbar container">
+          <picture class="navbar__logo">
+            <a href="../index.html" alt="logo">
+              <img src="../images/branding/logo_light_horizontal.svg" alt="" />
+            </a>
+          </picture>
+          <ul class="navbar__menu">
+            <li class="navbar__item with-submenu">
+              <a class="navbar__link with-icon" href="./views/shop.html"
+                >SHOP<iconify-icon  class="icon-header" icon="tabler:chevron-down"></iconify-icon
+              ></a>
+  
+              <li class="navbar__item">
+                <a class="navbar__link" href="../index.html">VER TIENDA</a>
+            </li>
+            <li>
+                <a class="navbar__link" href="./admin.html">ADMIN</a>
+            </li>
+            <li>
+                <a class="navbar__link" href="../index.html">SALIR</a>
+            </li>
+            
+            <li class="navbar__item">
+              <a href="../views/cart.html">
+                <img src="../images/icons/cart-icon.svg" alt="icono de carrito" />
+              </a>
+            </li>
+          </ul>
         </nav>
-    </header>
+      </header>
 <main>
     <h1>EDITAR ITEM</h1>
     <div class="input-container">
@@ -94,29 +106,28 @@
     </section>
 
 </main>
-<footer>
-    <section>
-        <nav>
-            <ul>
-                <li>
-                    <a href="./shop.html">SHOP</a>
-                </li>
-                <li>
-                    <a href="./register.html">REGISTRARSE</a>
-                </li>
-                <li>
-                    <a href="./login.html">LOGIN</a>
-                </li>
-                <li>
-                    <a href="./contact.html">CONTACTO</a>
-                </li>
-            </ul>
-            <picture>
-                <img src="../images/branding/isotype.svg" alt="isotipo de Funkoshop">
-            </picture>
-        </nav>
-    </section>
-    <p>All Rights Reserved 2023 - Funkoshop &copy;</p>
-</footer>
+<footer class="footer">
+    <nav class="navbar container">
+      <ul class="navbar__item">
+        <li class="navbar__item">
+          <a class="navbar__link" href="./views/shop.html">SHOP</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="./views/register.html">REGISTRARSE</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="./views/login.html">LOGIN</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="./views/contact.html">CONTACTO</a>
+        </li>
+      </ul>
+      <picture>
+        <img src="./images/branding/isotype.svg" alt="isotipo de Funkoshop" />
+      </picture>
+    </nav>
+
+    <p class="footer__copy">All Rights Reserved 2023 - Funkoshop &copy;</p>
+  </footer>
 </body>
 </html>

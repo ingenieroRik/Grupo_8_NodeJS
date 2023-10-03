@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funkoshop Register</title>
+    <link rel="stylesheet" href="../css/header-footer.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css"
+  />
+  <link rel="stylesheet" href="../css/register.css"/>
 </head>
 <body>
     <!--Header-->
@@ -34,21 +44,39 @@
 
       <!--MAIN-->
 
-        <h1>CREA TU CUENTA</h1>
-        <h2>Completa el formulario para ser parte del mundo de los Funkos</h2>
-            
-            <div class="input-container">
+      <main class="main-container">
+      
+      <div class="input-container">
+                <div class="tittle-input">
+                <h1>CREA TU CUENTA</h1>
+                <p>Completa el formulario para ser parte del mundo de los Funkos</p>
+                </div>  
 
-                <p>Nombre:<input type="text" placeholder="Nombre">
+                <div class="input-box">          
+                          <label class="input-box">Nombre</label>
+                    <input type="text" placeholder="Nombre">
+                </div>
 
-                Apellido:<input type="text" placeholder="Apellido">
+                <div class="input-box">
+                    <label>Apellido</label>
+                    <input type="text" placeholder="Apellido">
+                </div>
 
-                Email:<input type="text" placeholder="Email">
+                <div class="input-box"><label>Email</label>
+                    <input type="text" placeholder="Email">
+                </div>
 
-                Contraseña:<input type="text" placeholder="Contraseña">
+                <div class="input-box">
+                    <label>Contraseña:</label>
+                    <input type="text" placeholder="Contraseña">
+                </div>
 
-                Repita contraseña:<input type="text" placeholder="Repita Contraseña">
-                </p>
+                <div class="input-box">
+                    <label>Repita contraseña:</label>
+                    <input type="text" placeholder="Repita Contraseña">
+                </div>
+
+                
 
             </div>
 
@@ -61,36 +89,53 @@
 
             </div>
 
-
+        </main>
 
         <!--END MAIN-->
 
         <!--FOOTER-->
 
-        <footer>
-            <section>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="./shop.html">SHOP</a>
-                        </li>
-                        <li>
-                            <a href="./register.html">REGISTRARSE</a>
-                        </li>
-                        <li>
-                            <a href="./login.html">LOGIN</a>
-                        </li>
-                        <li>
-                            <a href="./contact.html">CONTACTO</a>
-                        </li>
-                    </ul>
-                    <picture>
-                        <img src="../images/branding/isotype.svg" alt="isotipo de Funkoshop">
-                    </picture>
-                </nav>
-            </section>
-            <p>All Rights Reserved 2023 - Funkoshop &copy;</p>
-        </footer>
+        <footer class="footer">
+            <nav class="navbar container">
+              <ul class="navbar__item">
+                <li class="navbar__item">
+                  <a class="navbar__link" href="./views/shop.html">SHOP</a>
+                </li>
+                <li class="navbar__item">
+                  <a class="navbar__link" href="./views/register.html">REGISTRARSE</a>
+                </li>
+                <li class="navbar__item">
+                  <a class="navbar__link" href="./views/login.html">LOGIN</a>
+                </li>
+                <li class="navbar__item">
+                  <a class="navbar__link" href="./views/contact.html">CONTACTO</a>
+                </li>
+              </ul>
+              <picture>
+                <img src="./images/branding/isotype.svg" alt="isotipo de Funkoshop" />
+              </picture>
+            </nav>
+        
+            <p class="footer__copy">All Rights Reserved 2023 - Funkoshop &copy;</p>
+          </footer>
+          <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+          <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+          <script>
+            new Glide('.glide', {
+                type: 'carousel',
+                startAt: 0,
+                perView: 3,
+                gap : 30,
+                breakpoint:{
+                  991: {
+                     perView: 2
+                  },
+                  768:{
+                    perView: 1
+                  }
+                }
+            }).mount();
+          </script>
 
         <!--END FOOTER-->
 
