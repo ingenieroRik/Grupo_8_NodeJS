@@ -1,0 +1,172 @@
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+.slider {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-36);
+    margin: var(--spacing-68) auto;
+}
+.slider__items {
+    display: flex;
+    gap: var(--spacing-24);
+
+}
+.card-item__cover {
+    display: flex;
+    position: relative;
+}
+.card-item__tag {
+    font-size: var(--font-xsmall);
+    text-transform: uppercase;
+    background-color: var(--rojo);
+    color: var(--blanco);
+    padding: var(--spacing-8) var(--spacing-12);
+    position: absolute;
+    right: 0;
+
+
+}
+
+
+.card-item__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-12);
+    padding: var(--spacing-16);
+}
+.card-item__licence {
+    font-size: var(--font-small);
+    font-weight: 500;
+}
+.card-item__name {
+    font-size: var(--font-medium);
+    font-weight: 700;
+}
+.card-item__price {
+    font-size: var(--font-small);
+  
+}
+.card-item__promo{
+    font-size: var(--font-small);
+    color: var(--azul);
+    font-weight: 700;
+}
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px; 
+}
+
+.filtros {
+    flex-basis: 25%;
+    margin-right: 20px;
+    width: 243.04px;
+    height: 493.93px;
+
+}
+
+.catalogo {
+    flex-basis: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.img{
+    width: 304.01px;
+    height: 352px;
+    left: -0.41px;
+}
+
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+    
+}
+.centrado{
+    margin: 0px auto;
+}
+/* styles.css */
+.centrado {
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    display: inline-flex;
+}
+
+/* Estilos para los elementos dentro de .centrado */
+.centrado > div {
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/* Estilos para el primer div dentro de .centrado */
+.centrado > div:first-child {
+    flex: 1 1 0;
+    align-self: stretch;
+    padding: 5.50px;
+    opacity: 0.50;
+    background: #919EAB;
+    border-radius: 4px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+/* Estilos para el segundo div dentro de .centrado */
+.centrado > div:nth-child(2) {
+    flex: 1 1 0;
+    align-self: stretch;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px #FF3333 solid;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+/* Estilos para el tercer div dentro de .centrado */
+.centrado > div:nth-child(3) {
+    /* Estilos similares al segundo div */
+}
+
+/* Continúa definiendo estilos para los demás div dentro de .centrado según sea necesario */

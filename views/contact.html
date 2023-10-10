@@ -3,48 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/header-footer.css" />
+    <link rel="stylesheet" href="../css/index-main.css" />
+    <link rel="stylesheet" href="../css/item.css" />
     <title>Funkoshop Grupo 8</title>
 </head>
 <body>
     <header>
-        <nav>
-            <picture>
-                <a href="../index.html" alt="logo">
-                    <img src="../images/branding/logo_light_horizontal.svg" alt="" >
-                </a>
-            </picture>
-            <ul>
-                <li>
-                    <a href="./shop.html">SHOP</a>
+        <nav class="navbar container">
+          <picture class="navbar__logo">
+            <a href="../index.html" alt="logo">
+              <img src="../images/branding/logo_light_horizontal.svg" alt="" />
+            </a>
+          </picture>
+          <ul class="navbar__menu">
+            <li class="navbar__item with-submenu">
+              <a class="navbar__link with-icon" href="shop.html"
+                >SHOP<iconify-icon
+                  class="icon-header"
+                  icon="tabler:chevron-down"
+                ></iconify-icon
+              ></a>
+  
+              <ul class="submenu">
+                <li class="submenu__item">
+                  <a href="" class="submenu__link">Funkos</a>
                 </li>
-                <li>
-                    <a href="./contact.html">CONTACTO</a>
+                <li class="submenu__item">
+                  <a href="" class="submenu__link">Remeras</a>
                 </li>
-                <li>
-                    <a href="./login.html">LOGIN</a>
+                <li class="submenu__item">
+                  <a href="" class="submenu__link">Llaveros</a>
                 </li>
-                <li>
-                    <a href="./cart.html">
-                        <img src="./images/icons/cart-icon.svg" alt="icono de carrito">
-                    </a>
-                </li>
-            </ul>
+              </ul>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="contact.html">CONTACTO</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="login.html">LOGIN</a>
+            </li>
+            <li class="navbar__item">
+              <a href="cart.html">
+                <img src="../images/icons/cart-icon.svg" alt="icono de carrito" />
+              </a>
+            </li>
+          </ul>
         </nav>
-    </header>
+      </header>
 
-    <main>
-        <p><strong>FUNCOSHOP S.A.</strong> Completá el formulario y dentro de las próximas 72hs hábiles te responderemos</p>
-        <form>
-            <div>
-                <label for="nombreCliente">Nombre:</label>
-                <input type="text" id="nombreCliente" name="nombreCliente" placeholder="Su Nombre">
-                <label for="mailCliente">E-mail:</label>
-                <input type="email" id="mailCLiente" name="mailCLiente" placeholder="Su Correo">
+    <main class="container contenedor">
+        <h1 class="titulo-form centrar-txt mb-1">Contacto</h1>
+        <p class="txt__subtitulo centrar-txt">Completá el formulario y dentro de las próximas 72hs hábiles te responderemos</p>
+        <form  class="contenido-formulario--centro">
+            <div class="espacio__form">
+                <label class="formulario__label" for="nombreCliente">Nombre:</label>
+                <input class="formulario__input" type="text" id="nombreCliente" name="nombreCliente" placeholder="Tú Nombre">
+                <label class="formulario__label" for="mailCliente">E-mail:</label>
+                <input class="formulario__input" type="email" id="mailCLiente" name="mailCLiente" placeholder="correo@correo.com">
             </div>
-            <div>
-                <label for="telefonoCliente">Telefono:</label>
-                <input type="number" id="telefonoCliente" name="telefonoCliente" placeholder="1103034566">
-                <select name="motivo" id="motivo">
+            <div class="espacio__form">
+                <label class="formulario__label" for="telefonoCliente">Telefono:</label>
+                <input class="formulario__input " type="number" id="telefonoCliente" name="telefonoCliente" placeholder="+541103034566">
+                <label class="formulario__label" for="motivo">Motivo:</label>
+                <select class="form__select" name="motivo" id="motivo">
                     <option value="">Consulta</option>
                     <option value="">Falla del producto</option>
                     <option value="">No es lo que pedi</option>
@@ -53,45 +78,52 @@
                     <option value="">Otro motivo</option>
                 </select>
             </div>
-            <div>
-                <label for="dniCliente">DNI:</label>
-                <input type="number" id="dniCliente" name="dniCliente" placeholder="Su Documento">
-                <label for="nPedido">N° del Pedido:</label>
-                <input type="text" id="nPedido" name="nPedido" placeholder="N° pedido alfanumerico">
+            <div class="espacio__form">
+                <label class="formulario__label" for="dniCliente">DNI:</label>
+                <input class="formulario__input" type="number" id="dniCliente" name="dniCliente" placeholder="Tú Documento">
+                <label class="formulario__label" for="nPedido">N° del Pedido:</label>
+                <input class="formulario__input" type="text" id="nPedido" name="nPedido" placeholder="SSK111AB001">
             </div>
             <textarea name="mensaje" id="mensaje" cols="30" rows="10">Te leemos...</textarea>
-            <input type="file" accept="image/jpg, image/png">
-            <p>Sube una imagen si lo requieres</p>
-            <input type="submit" value="Enviar Consulta">
+            <div class="espacio__form">
+                <label class="formulario__label" for="imagen">Imagen:</label>
+                <input type="file" name="imagen" accept="image/jpg, image/png">
+                <p class="txt__apoyo" >Sube una imagen si lo requieres</p>
+            </div>
+            <input class="btn_rojo rectangula-g" type="submit" value="Enviar Consulta">
         </form>
     </main>
 
 
 
-    <footer>
-        <section>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="./shop.html">SHOP</a>
-                    </li>
-                    <li>
-                        <a href="./register.html">REGISTRARSE</a>
-                    </li>
-                    <li>
-                        <a href="./login.html">LOGIN</a>
-                    </li>
-                    <li>
-                        <a href="./contact.html">CONTACTO</a>
-                    </li>
-                </ul>
-                <picture>
-                    <img src="../images/branding/isotype.svg" alt="isotipo de Funkoshop">
-                </picture>
-            </nav>
-        </section>
-        <p>All Rights Reserved 2023 - Funkoshop &copy;</p>
-    </footer>
+    <footer class="footer">
+        <nav class="navbar container">
+          <ul class="navbar__item">
+            <li class="navbar__item">
+              <a class="navbar__link" href="shop.html">SHOP</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="register.html">REGISTRARSE</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="login.html">LOGIN</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="contact.html">CONTACTO</a>
+            </li>
+          </ul>
+          <picture>
+            <img
+              src="../images/branding/isotype.svg"
+              alt="isotipo de Funkoshop"
+            />
+          </picture>
+        </nav>
+  
+        <p class="footer__copy">All Rights Reserved 2023 - Funkoshop &copy;</p>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+      <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
     
 </body>
 </html>
