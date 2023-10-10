@@ -1,94 +1,112 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funkoshop Create</title>
-    <link rel="stylesheet" href="../css/header-footer.css" />
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/header-footer.css" />
+        <link rel="stylesheet" href="../css/index-main.css" />
+        <link rel="stylesheet" href="../css/item.css" />
+        <title>Funkoshop Grupo 8</title>
+      </head>
+  <body>
     <header>
-        <nav class="navbar container">
-          <picture class="navbar__logo">
-            <a href="../index.html" alt="logo">
-              <img src="../images/branding/logo_light_horizontal.svg" alt="" />
-            </a>
-          </picture>
-          <ul class="navbar__menu">
-            <li class="navbar__item with-submenu">
-              <a class="navbar__link with-icon" href="./views/shop.html"
-                >SHOP<iconify-icon  class="icon-header" icon="tabler:chevron-down"></iconify-icon
-              ></a>
-  
-              <li class="navbar__item">
-                <a class="navbar__link" href="../index.html">VER TIENDA</a>
-            </li>
-            <li>
-                <a class="navbar__link" href="./admin.html">ADMIN</a>
-            </li>
-            <li>
-                <a class="navbar__link" href="../index.html">SALIR</a>
-            </li>
-            
-            <li class="navbar__item">
-              <a href="../views/cart.html">
-                <img src="../images/icons/cart-icon.svg" alt="icono de carrito" />
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <nav class="navbar container">
+        <picture class="navbar__logo">
+          <a href="../index.html" alt="logo">
+            <img src="../images/branding/logo_light_horizontal.svg" alt="" />
+          </a>
+        </picture>
+        <ul class="navbar__menu">
+          <li class="navbar__item with-submenu">
+            <a class="navbar__link with-icon" href="./views/shop.html"
+              >SHOP<iconify-icon
+                class="icon-header"
+                icon="tabler:chevron-down"
+              ></iconify-icon
+            ></a>
 
-    <main>
-        <h1>CREAR NUEVO ITEM</h1>
-        <form>
-            <div>
-                <label for="categoria">Categoría</label>
-                <select name="categoria" id="categoria">
-                    <option value="" disabled selected>Seleccionar</option>
+            <ul class="submenu">
+              <li class="submenu__item">
+                <a href="" class="submenu__link">Funkos</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="submenu__link">Remeras</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="submenu__link">Llaveros</a>
+              </li>
+            </ul>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="./views/contact.html">CONTACTO</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="./views/login.html">LOGIN</a>
+          </li>
+          <li class="navbar__item">
+            <a href="./views/cart.html">
+              <img src="../images/icons/cart-icon.svg" alt="icono de carrito" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container contenedor mw-80">
+        <h1 class="titulo-form">CREAR NUEVO ITEM</h1>
+        <form class="contenido-formulario--latizq">
+            <div class="espacio__form">
+                <label class="formulario__label__ligth" for="categoria">Categoría:</label>
+                <select class="form__select" name="categoria" id="categoria" required>
+                    <option value="" disabled selected>--Seleccionar--</option>
                     <option value="1">a definir</option>
                     <option value="2">a definir</option>
                     <option value="3">a definir</option>
                 </select>
-                <label for="licencia">Licencia</label>
-                <select name="licencia" id="licencia">
-                    <option value="" disabled selected>Seleccionar</option>
+                <label class="formulario__label__ligth" for="licencia">Licencia:</label>
+                <select class="form__select" name="licencia" id="licencia" required>
+                    <option value="" disabled selected>--Seleccionar--</option>
                     <option value="1">a definir</option>
                     <option value="2">a definir</option>
                     <option value="3">a definir</option>
                 </select>            
             </div>
-            <div>
-                <label for="nombre">Nombre del producto</label>
-                <input type="text" id="nombre" placeholder="Kakashi Hatake Shippuden Saga" required>
+            <div class="espacio__form">
+                <label class="formulario__label" for="nombre">Nombre del producto:</label>
+                <input class="formulario__input wl" type="text" id="nombre" placeholder="Kakashi Hatake Shippuden Saga" required>
             </div>
             <textarea id="descripcion" cols="30" rows="10" placeholder="Descripción del producto"></textarea>
-            <div>
-                <label for="sku">SKU</label>
-                <input type="text" placeholder="alfanumerico">
-                <label for="precio">Precio</label>
-                <input type="number" min="0" placeholder="$0.000,00">
-                <label for="stock">Stock</label>
-                <input type="number" id="stock" min="0" placeholder="0">
+            <div class="prueba">
+              <div class="espacio__form">
+                  <label class="formulario__label" for="sku">SKU:</label>
+                  <input class="formulario__input wm" type="text" placeholder="SSK111AB001">
+                  <label class="formulario__label" for="precio">Precio:</label>
+                  <input class="formulario__input wm" type="number" min="0" placeholder="$0.000,00">
+                  <label class="formulario__label" for="stock">Stock:</label>
+                  <input class="formulario__input ws" type="number" id="stock" min="0" placeholder="0">
+              </div>
+              <div class="espacio__form">
+                  <label class="formulario__label" for="descuento">Descuento:</label>
+                  <input class="formulario__input ws" type="number" id="descuento" min="0" max="100" step="5" placeholder="0%">
+                  <label class="formulario__label" for="cuotas">Cuotas:</label>
+                  <select class="form__select" name="cuotas" id="cuotas" required>
+                      <option value="" disabled selected>Elegir cuotas</option>
+                      <option value="1">a definir</option>
+                      <option value="2">a definir</option>
+                      <option value="3">a definir</option>
+                  </select>
+              </div>
             </div>
-            <div>
-                <label for="descuento">Descuento</label>
-                <input type="number" id="descuento" min="0" max="100" step="5" placeholder="0%">
-                <label for="cuotas">Cuotas</label>
-                <select name="cuotas" id="cuotas">
-                    <option value="" disabled selected>Elegir cuotas</option>
-                    <option value="1">a definir</option>
-                    <option value="2">a definir</option>
-                    <option value="3">a definir</option>
-                </select>  
-            </div>
-            <div>
-                <label for="imagen">Imagen:</label>
+            <div class="espacio__form">
+                <label class="formulario__label" for="imagen">Imagen:</label>
                 <input type="file" name="imagen" id="imagen" accept="image/jpeg, image/png">
             </div>
-            <div>
-                <input type="submit" value="Agregar Producto">
-                <input type="reset" value="Limpiar">
+            <div class="espacio__form">
+                <input class="btn_rojo rectangula-ch" type="submit" value="Agregar Producto">
+                <input id="limpiar" class="btn_rojo rectangula-ch" type="reset" value="Limpiar">
             </div>
         </form>
     </main>
@@ -110,11 +128,16 @@
             </li>
           </ul>
           <picture>
-            <img src="./images/branding/isotype.svg" alt="isotipo de Funkoshop" />
+            <img
+              src="../images/branding/isotype.svg"
+              alt="isotipo de Funkoshop"
+            />
           </picture>
         </nav>
-    
+  
         <p class="footer__copy">All Rights Reserved 2023 - Funkoshop &copy;</p>
       </footer>
+      <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+      <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </body>
 </html>
