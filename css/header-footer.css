@@ -1,5 +1,23 @@
 :root {
     /* paleta de colores */
+
+    --gris: #30343F;
+    --gris-claro: #4F4F4F;
+    --rojo: #FF3333;
+    --azul: #1D84B5;
+    --blanco: #fff;
+    --negro: #000;
+
+    --negro-claro:#1f1f1f;
+    --blanco-claro: #fafaff;
+    
+
+    /* tipografia */
+  
+    --fuentePrincipal: 'Inter', sans-serif;
+    --fuenteSecundaria: 'Raleway', sans-serif;
+
+
     --primary-solid:#ff3333;
     --primary-900:rgba(255, 51, 51, 0.9);
     --primary-500:rgba(255, 51, 51, 0.5);
