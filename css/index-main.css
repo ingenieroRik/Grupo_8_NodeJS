@@ -85,7 +85,7 @@
     font-family: var(--alternative-font);
     font-size: var(--font-large);
     font-weight: 300;
-    border-bottom: 2px solid var(--primary-solid);
+    border-bottom: 2px solid var(--rojo);
     padding-bottom: var(--spacing-20);
 }
 .coleccion__link {
