@@ -56,41 +56,49 @@
   <!--SHOP-->
   <main id="shop">
     <!--CONTAINER1_FILTROS_BUSQUEDA-->
-    <section class="filtros">
-      <form>
-        <div class="filtro-nombre">
-          <label class="buscar_por_item">BUSCAR</label>
-          <input type="text" id="busqueda" placeholder="item o categoria" />
-        </div>
-        <div class="filtro-orden">
-          <label class="ordenar-por">ORDENAR POR</label>
-          <select id="dropdown" name="dropdown">
-            <option value="a-z">A-Z</option>
-            <option value="z-a">Z-A</option>
-            <option value="mayorprecio">Mayor precio</option>
-            <option value="menorprecio">Menor precio</option>
+    <aside class="shop__filters filters">
+      <div class="filters__search">
+          <label  class="filters__title" for="search">BUSCAR</label>
+          <input type="text" name="search" id="search" placeholder="item o categoría">
+      </div>
+      <div class="filters__order">
+          <label  class="filters__title" for="orderby">ORDERNAR POR</label>
+          <select name="orderby" id="orderby">
+              <option value="az">A-Z</option>
+              <option value="za">Z-A</option>
+              <option value="desc">Mayor precio</option>
+              <option value="asc">Menor precio</option>
           </select>
-        </div>
-        <div class="filtro-precio">
-          <label for="filtro-precio">PRECIO</label>
-          <label for="precio-min">MIN</label>
-          <input type="number" id="minimo" min="0" placeholder="0" />
-          <label for="precio-max">- MAX</label>
-          <input type="number" id="maximo" min="0" placeholder="0" />
-        </div>
-        <div class="filtro-categoria">
-          <label for="filtro-categoria">FILTRAR</label>
-          <input type="checkbox" name="filtro" />
-          <label for> NUEVOS</label>
-          <input type="checkbox" name="filtro" />
-          <label for> OFERTAS</label>
-          <input type="checkbox" name="filtro" />
-          <label for> EDICIÓN ESPECIAL</label>
-          <input type="checkbox" name="filtro" />
-          <label for> FAVORITOS</label>
-        </div>
-      </form>
-    </section>
+      </div>
+      <div class="filters__price">
+          <span class="filters__title" >PRECIO</span>
+          <div>
+              <label for="min">MIN</label>
+              <input type="text" name="min" id="min" placeholder="0">
+              <label for="max">- MAX</label>
+              <input type="text" name="max" id="max" placeholder="0">
+          </div>
+      </div>
+      <div class="filters__checks">
+          <span class="filters__title" for="filter">FILTRAR</span>
+          <div>
+              <input type="checkbox" name="filter" id="news" value="news">
+              <label for="">NUEVOS</label>
+          </div>
+          <div>
+              <input type="checkbox" name="filter" id="offers" value="offers">
+              <label for="">OFERTAS</label>
+          </div>
+          <div>
+              <input type="checkbox" name="filter" id="specials" value="specials">
+              <label for="">EDICIÓN ESPECIAL</label>
+          </div>
+          <div>
+              <input type="checkbox" name="filter" id="favs" value="favs">
+              <label for="">FAVORITOS</label>
+          </div>
+      </div>
+  </aside>
     <!--CONTAINER2_CATALOGO-->
 
     <div class="contenido">
