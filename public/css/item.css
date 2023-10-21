@@ -113,10 +113,12 @@
 }
 
 .titulo-form{
-    font-family: var(--fuenteSecundaria);
-    font-weight: var(--bold);
-    font-size: var(--font-xjumbo);
+   
     margin: var(--spacing-36) 0;
+
+    font-family: var(--alternative-font);
+    font-size: var(--font-display);
+    font-weight: 500;
 }
 .centrar-txt{
     text-align: center;
