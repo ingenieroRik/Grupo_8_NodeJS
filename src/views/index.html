@@ -20,13 +20,13 @@
     <header>
       <nav class="navbar container">
         <picture class="navbar__logo">
-          <a href="./index.html" alt="logo">
+          <a href="/" alt="logo">
             <img src="./images/branding/logo_light_horizontal.svg" alt="" />
           </a>
         </picture>
         <ul class="navbar__menu">
           <li class="navbar__item with-submenu">
-            <a class="navbar__link with-icon" href="./views/shop2.html"
+            <a class="navbar__link with-icon" href="/shop2"
               >SHOP<iconify-icon  class="icon-header" icon="tabler:chevron-down"></iconify-icon
             ></a>
 
@@ -43,13 +43,13 @@
             </ul>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link" href="./views/contact.html">CONTACTO</a>
+            <a class="navbar__link" href="/contact">CONTACTO</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link" href="./views/login.html">LOGIN</a>
+            <a class="navbar__link" href="/login">LOGIN</a>
           </li>
           <li class="navbar__item">
-            <a  class="navbar__link"    href="./views/cart.html">
+            <a  class="navbar__link"    href="/cart">
               <img src="./images/icons/cart-icon.svg" alt="icono de carrito" />
             </a>
           </li>
@@ -64,7 +64,7 @@
           <p class="hero__text">
             Descubrí el próximo Funko Pop de tu colección
           </p>
-          <a class="hero__link" href="./views/shop2.html">SHOP</a>
+          <a class="hero__link" href="/shop2">SHOP</a>
         </article>
       </section>
 
@@ -210,16 +210,16 @@
       <nav class="navbar container">
         <ul class="navbar__item">
           <li class="navbar__item">
-            <a class="navbar__link" href="../views/shop2.html">SHOP</a>
+            <a class="navbar__link" href="/shop2">SHOP</a> <!-- al usar node y express en el href va el nombre de la ruta  que se coloco en el mainRoutes.js--> 
           </li>
           <li class="navbar__item">
-            <a class="navbar__link" href="../views/register.html">REGISTRARSE</a>
+            <a class="navbar__link" href="/register">REGISTRARSE</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link" href="../views/login.html">LOGIN</a>
+            <a class="navbar__link" href="/login">LOGIN</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link" href="../views/contact.html">CONTACTO</a>
+            <a class="navbar__link" href="/contact">CONTACTO</a>
           </li>
         </ul>
         <picture>
@@ -229,6 +229,7 @@
 
       <p class="footer__copy">All Rights Reserved 2023 - Funkoshop &copy;</p>
     </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
     <script>

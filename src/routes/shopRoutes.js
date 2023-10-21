@@ -1,12 +1,12 @@
 const express = require ("express");
+const shopControllers = require("../controllers/shopControllers");
 
 const router = express.Router();
 
-router.get("/", (req,res) => res.sendFile("/home/rik/Escritorio/JS_NodeJS_codo_a_codo/Proyecto_Grupo_8/public/views/shop2.html"));
-router.get("/item/:id", (req,res) => res.sendFile("/home/rik/Escritorio/JS_NodeJS_codo_a_codo/Proyecto_Grupo_8/public/shop2/item/:id.html"));
-router.post("/item/:id/add", (req,res) => res.sendFile("./public/shop2/item/:id/add.html"));
-router.get("/cart", (req,res) => res.sendFile("./public/shop2/cart.html"))
-router.post("/item/id:/add", (req,res) => res.sendFile("./public/shop2/item/:id/add.html"));
+router.get("/shop2", shopControllers.shop2);
+router.get("/items", shopControllers.items);
+router.get("/cart", shopControllers.cart);
+//router.get("/item/:id", shopControllers.edit_item);
 
 
 
