@@ -1,44 +1,36 @@
-
-.main-container{
+#register {
+    margin: var(--spacing-68) auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: var(--spacing-36);
+}
+
+.register__header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-16);
     align-items: center;
     justify-content: center;
 }
 
-
-.tittle-input {
-    margin-top: 10px;
-    margin-bottom: 70px;
-    text-align: center;
-
+.register__title {
+    font-size: var(--font-jumbo);
 }
 
-.tittle-input h1 {
-    font-size: 42px;
+.register__subtitle {
+    font-size: var(--font-large);
 }
 
-.tittle-input p  {
-    font-size: 32px;
-}
-
-.input-container{
-    background-color: red;
-    height: 526px;
-    width: 1023px;
+.register__form {
     display: flex;
     flex-direction: column;
-    align-items: center;
-
-    justify-content: center;  
-    font-size: 24px; 
+    justify-content: center;
+    align-items: stretch;
+    gap: var(--spacing-36);
 }
 
-.input-box{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-basis: 2px;
-    width:455px;
+#register .form__terms {
+    font-size: var(--font-small);
 }
-

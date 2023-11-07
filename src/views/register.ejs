@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <%- include('partials/head.ejs') %>
+    <link rel="stylesheet" href="../css/item.css" />
+   
+</head>
+<body>
+    <header>
+      <%- include('partials/header.ejs') %>
+    </header>
+
+    <main class="container">
+        <h1 class="titulo-form centrar-txt mb-1">CREA TU CUENTA</h1>
+        <p class="txt__subtitulo centrar-txt">Completá el formulario y dentro de las próximas 72hs hábiles te responderemos</p>
+        <form  class="contenido-formulario--centro">
+            <div class="espacio__form">
+                <label class="formulario__label" for="nombreCliente">Nombre:</label>
+                <input class="formulario__input" type="text" id="nombreCliente" name="nombreCliente" placeholder="Tú Nombre">
+                <label class="formulario__label" for="mailCliente">E-mail:</label>
+                <input class="formulario__input" type="email" id="mailCLiente" name="mailCLiente" placeholder="correo@correo.com">
+            </div>
+            <div class="espacio__form">
+                <label class="formulario__label" for="telefonoCliente">Telefono:</label>
+                <input class="formulario__input " type="number" id="telefonoCliente" name="telefonoCliente" placeholder="+541103034566">
+                <label class="formulario__label" for="motivo">Motivo:</label>
+                <select class="form__select" name="motivo" id="motivo">
+                    <option value="">Consulta</option>
+                    <option value="">Falla del producto</option>
+                    <option value="">No es lo que pedi</option>
+                    <option value="">Demora en la entrega</option>
+                    <option value="">No es lo publicado</option>
+                    <option value="">Otro motivo</option>
+                </select>
+            </div>
+            <div class="espacio__form">
+                <label class="formulario__label" for="dniCliente">DNI:</label>
+                <input class="formulario__input" type="number" id="dniCliente" name="dniCliente" placeholder="Tú Documento">
+                <br>
+                <label class="formulario__label" for="nPedido">Pedido:</label>
+                <input class="formulario__input" type="text" id="nPedido" name="nPedido" placeholder="SSK111AB001">
+            </div>
+            <textarea class="contact__text-area"   name="mensaje" id="mensaje" cols="30" rows="10">Te leemos...</textarea>
+            <div class="espacio__form">
+                <label class="formulario__label" for="imagen">Imagen:</label>
+                <input type="file" name="imagen" accept="image/jpg, image/png">
+                <p class="txt__apoyo" >Sube una imagen si lo requieres</p>
+            </div>
+            <input class="btn_rojo rectangula-g" type="submit" value="Enviar Consulta">
+        </form>
+    </main>
+
+
+
+      <footer class="footer">
+            <%- include('partials/footer.ejs') %>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+      <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+    
+</body>
+</html>

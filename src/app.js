@@ -16,12 +16,13 @@ app.set('view engine', 'ejs');
 //si la ruta por defecto no es /views debemos decirle a node que la carpeta se encuentra
 // en otra ruta, para ello usamos:
 //app.set('views', __dirname + '/views');
-app.set('views', './src/views');
 
+app.set('views', './src/views');
 
 
 app.use (mainRoutes);
 app.use (shopRoutes);
 app.use (adminRoutes);
+
 
 app.listen(4000, ()=> console.log ("servidor corriendo en http://localhost:4000"));

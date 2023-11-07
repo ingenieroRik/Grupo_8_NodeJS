@@ -1,0 +1,21 @@
+[
+    {
+        "id": 1,
+        "tittle": "STAR WARS & THE MANDALORIAN",
+        "text": " Disfruta de una saga que sigue agregando personajes a su colección.",
+        "img" : "/images/star-wars/baby-yoda-1.webp"
+    
+    },
+    {
+        "id": 2,
+        "tittle": "POKEMON INDIGO",
+        "text": " Atrapa todos los que puedas y disfruta de una colección llena deamigos.",
+        "img" : "/images/pokemon/vulpix-1.webp"
+    },
+    {
+        "id": 3,
+        "tittle": "HARRY POTTER",
+        "text": " Revive los recuerdos de una colección llena de magia.",
+        "img" : "/images/harry-potter/harry-1.webp"
+    }
+]

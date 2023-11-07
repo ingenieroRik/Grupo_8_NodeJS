@@ -4,9 +4,9 @@ const path = require("path");
 
 const adminControllers = {
    
-    admin: (req,res) => res.sendFile( path.join(__dirname,'../views/admin.html')),
-    create: (req,res) => res.sendFile( path.join(__dirname,'../views/create.html')),
-    edit: (req,res) => res.sendFile( path.join(__dirname,'../views/edit.html'))
+    admin: (req,res) => res.render('admin.ejs'),
+    create: (req,res) => res.render( 'create.ejs'),
+    edit: (req,res) => res.render( 'edit.ejs')
 }
 
 module.exports = adminControllers;
