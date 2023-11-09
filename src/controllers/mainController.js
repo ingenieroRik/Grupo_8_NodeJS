@@ -25,7 +25,7 @@ const mainControllers = {
 
 
 
-        register: (req,res) => res.render("contact.ejs"),
+        register: (req,res) => res.render("register.ejs"),
         contact: (req,res) => res.render("contact.ejs"),
        
         login: (req,res) => res.render( 'login.ejs'),

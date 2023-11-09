@@ -3,6 +3,8 @@
   <head>
     
     <link rel="stylesheet" href="./css/item.css" />
+    <link rel="stylesheet" href="./css/login-contact.css" />
+
     <%- include('partials/head.ejs') %>
   </head>
   <body>
@@ -10,18 +12,18 @@
       <%- include('partials/header.ejs') %>
     </header>
 
-    <main class="container contenedor">
+    <main class="container">
         <h1 class="titulo-form centrar-txt">INGRESAR A MI CUENTA</h1>
-        <form class="contenido-formulario--centro">
-            <div class="casilla__formulario">
-                <label class="formulario__label" for="mail">Email:</label>
-                <input class="formulario__input" type="email" id="mail" placeholder="grupo8@correo.com">
+        <form class="register__form">
+            <div class="form__box--grid">
+                <label class="form__label" for="mail">Email:</label>
+                <input class="form__input" type="email" id="mail" placeholder="grupo8@correo.com">
             </div>
-            <div class="casilla__formulario">
-                <label class="formulario__label" for="password">Contraseña:</label>
-                <input class="formulario__input" type="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+            <div class="form__box--grid">
+                <label class="form__label" for="password">Contraseña:</label>
+                <input class="form__input" type="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
             </div>
-            <div class="casilla__formulario__submit">
+            <div class="form__submission">
                 <input class="btn_rojo rectangula-g" type="submit" value="Ingresar">
                 <div class="recordame">
                   <input type="checkbox" id="recordame">

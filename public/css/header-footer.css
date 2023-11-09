@@ -171,7 +171,7 @@ max-width: 300px;
         gap: var(--spacing-20);
     }
 }
-@media (max-width: 530px){
+@media (max-width: 412px){
     .navbar__link{
       font-size: var(--font-small);
       padding: 0 ;
