@@ -157,11 +157,48 @@ textarea::placeholder {
     padding: var(--spacing-8);
 }
 
+
+.titulo-form{
+   
+    margin: var(--spacing-36) 0;
+    font-family: var(--alternative-font);
+    font-size: var(--font-display);
+    font-weight: 500;
+}
+.centrar-txt{
+    text-align: center;
+}
+.login__olvide-clave{
+    font-family: var(--fuenteSecundaria);
+    font-weight: var(--regular);
+    font-size: var(--font-small);
+    text-align: center;
+    color: var(--azul);
+    margin: 0 auto;
+    margin: var(--spacing-28) 0 var(--spacing-36);
+}
+.rectangula-g{
+    padding: var(--spacing-12) var(--spacing-28);
+}
+
+
 /* botones */
 
 .btn {
     border: none;
     cursor: pointer;
+}
+.btn_rojo{
+    background-color: var(--rojo);
+    border: none;
+    color: var(--blanco);
+    font-family: var(--fuentePrincipal);
+    font-weight: var(--light);
+    font-size: var(--font-medium);
+    &:hover{
+        cursor: pointer;
+        background-color: var(--azul);
+    }
 }
 
 /* colores  */

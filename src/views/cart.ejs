@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/header-footer.css" />
+    <%- include('partials/head.ejs') %>
     <link rel="stylesheet" href="../css/cart.css" />
-    <title>Funkoshop Cart</title>
+   
   </head>
 
   <body>
@@ -40,17 +38,29 @@
 
             </div>
           
-    <div>
-      <img src="../images/star-wars/baby-yoda-1.webp" />
-      <h2>BABY YODA BLUEBALL</h2>
-      <p>STAR WARS</p>
-      <p>Precio unitario $1799,99</p>
-      <!--en figma dice solo precio-->
-      <input type="number" placeholder="2" />
-      <button>+</button>
-      <button>-</button>
-      <p>$3599,99</p>
-      <button><img src="../images/icons/close-icon.png" alt="" /></button>
+    <div class="card__detalle" >
+        <div>
+              <img class="card_image"  style="height: 80px;"     src="../images/star-wars/baby-yoda-1.webp" />
+        </div>
+        <div class="card_description">
+              <h2>BABY YODA BLUEBALL</h2>
+              <p>STAR WARS</p>
+              <p>Precio unitario $1799,99</p>
+        </div>
+       
+          <div>
+            <input type="number" placeholder="2" />
+        </div>
+        <div>
+          <button>+</button>
+          <button>-</button>
+        </div>
+        <div>
+            <p>$3599,99</p>
+        </div>
+        <div>
+            <button class="card__image-button"><img src="../images/icons/close-icon.png" alt="" /></button>
+        </div>
     </div>
 
     <div>

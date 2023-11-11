@@ -12,6 +12,10 @@ root {
 --blanco-claro: #fafaff;
 }
 
+.container {
+  flex-direction: row;
+}
+
 #shop {
   display: flex;
   gap: var(--spacing-28);
@@ -231,4 +235,18 @@ root {
   100% {
       opacity: 1;
   }
+}
+
+
+@media (max-width: 802px){
+  .container {
+    flex-direction: column;
+  }
+  
+
+  
+}
+@media (max-width: 412px){
+  
+  
 }
