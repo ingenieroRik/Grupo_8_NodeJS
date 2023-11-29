@@ -1,0 +1,85 @@
+[
+    {
+        "id": 1,
+        "name": "STORMTROOPER LIGHTSABER",
+        "imgfront": "/images/star-wars/trooper-1.webp",
+        "imgback" : "/images/star-wars/trooper-box.webp",
+        "licence": "STAR WARS",
+        "price": "$1799,99",
+        "promo": "3 coutas sin interés"
+    },
+    {
+        "id": 2,
+        "name": "PIDGEOTO",
+        "imgfront": "/images/pokemon/pidgeotto-1.webp",
+        "imgback" : "/images/pokemon/pidgeotto-box.webp",
+        "licence": "POKEMON",
+        "price": "$1799,99",
+        "promo": "3 Coutas sin interés"
+    },
+    {
+        "id": 3,
+        "name": "LUNA LOVEGOOD LION MASK",
+        "imgfront": "/images/harry-potter/harry-1.webp",
+        "imgback" : "/images/harry-potter/harry-box.webp",
+        "licence": "HARRY POTTER",
+        "price": "$1799,99",
+        "promo": "3 Coutas sin interés"
+    },
+    {
+        "id": 4,
+        "name": "STORMTROOPER LIGHTSABER",
+        "imgfront": "/images/star-wars/trooper-1.webp",
+        "imgback" : "/images/star-wars/trooper-box.webp",
+        "licence": "STAR WARS",
+        "price": "$1799,99",
+        "promo": "3 coutas sin interés"
+    },
+    {
+        "id": 5,
+        "name": "PIDGEOTO",
+        "imgfront": "/images/pokemon/pidgeotto-1.webp",
+        "imgback" : "/images/pokemon/pidgeotto-box.webp",
+        "licence": "POKEMON",
+        "price": "$1799,99",
+        "promo": "3 Coutas sin interés"
+    },
+    {
+        "id": 6,
+        "name": "LUNA LOVEGOOD LION MASK",
+        "imgfront": "/images/harry-potter/harry-1.webp",
+        "imgback" : "/images/harry-potter/harry-box.webp",
+        "licence": "HARRY POTTER",
+        "price": "$1799,99",
+        "promo": "3 Coutas sin interés"
+    },
+    {
+        "id": 8,
+        "name": "PIDGEOTO",
+        "imgfront": "/images/pokemon/pidgeotto-1.webp",
+        "imgback" : "/images/pokemon/pidgeotto-box.webp",
+        "licence": "POKEMON",
+        "price": "$1799,99",
+        "promo": "3 Coutas sin interés"
+ 
+    },
+    {
+        
+        "id": 7,
+        "name": "STORMTROOPER LIGHTSABER",
+        "imgfront": "/images/star-wars/trooper-1.webp",
+        "imgback" : "/images/star-wars/trooper-box.webp",
+        "licence": "STAR WARS",
+        "price": "$1799,99",
+        "promo": "3 coutas sin interés"
+    },
+    {
+        "id": 9,
+        "name": "LUNA LOVEGOOD LION MASK",
+        "imgfront": "/images/harry-potter/harry-1.webp",
+        "imgback" : "/images/harry-potter/harry-box.webp",
+        "licence": "HARRY POTTER",
+        "price": "$1799,99",
+        "promo": "3 Coutas sin interés"
+    }
+]

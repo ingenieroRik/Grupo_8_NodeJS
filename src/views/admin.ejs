@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <%- include('partials/head.ejs') %>
+  <link rel="stylesheet" href="../css/admin.css"/>
+ 
+</head>
+<body>
+    <header>
+      <%- include('partials/header.ejs') %>
+    </header>
+
+<main class="main-container">
+
+
+
+<table class="item-list">
+
+    <div class="search-container">
+        <img class="loupe" src="../images/icons/search_icon.svg" />
+        <input class="input" type="search" />
+    </div>
+    
+    <div class="product-list-tittle">
+    
+    <h1>LISTA DE PRODUCTOS</h1>
+    
+    <div class="add-container">
+    
+    <h2 class="agregar__text">AGREGAR</h2>
+    
+  
+        <img  class="agregar__add"  src="../images/icons/+icon admin.png"/>
+        
+    
+    </div>
+    
+    </div>
+
+<thead>
+    <tr>
+        <th>ID</th>
+        <th>Código</th>
+        <th>Nombre de Producto</th>
+        <th>Categoría</th>
+    </tr>
+</thead>
+    
+   
+
+    <tbody>
+        <% for (let i=0; i < products.length; i++ ) { %>
+
+        <tr>
+            <td><%= products[i].id %></td>
+            <td><%= products[i].codigo %></td>
+            <td><%= products[i].nombreProducto %></td>
+            <td><%= products[i].categoria %></td>
+            <td><img class="product__icon" src="../images/icons/edit_pencil.svg"></td>
+            <td><img  class="product__icon"  src="../images/icons/delete_trash.svg"></td>
+        </tr>
+    </tbody>
+       <% } %>  
+    <!--
+
+    <tbody>
+        <tr>
+            <td>3</td>
+            <td>STW001003</td>
+            <td>Luke Skywalker & Grogu</td>
+            <td>STAR WARS</td>
+            <td><img class="product__icon" src="../images/icons/edit_pencil.svg"></td>
+            <td><img  class="product__icon"  src="../images/icons/delete_trash.svg"></td>
+        </tr>
+    </tbody>
+
+    <tbody>
+        <tr>
+            <td>4</td>
+            <td>STW001004</td>
+            <td>Storm Trooper Lightsaber</td>
+            <td>STAR WARS</td>
+            <td><img class="product__icon" src="../images/icons/edit_pencil.svg"></td>
+            <td><img  class="product__icon"  src="../images/icons/delete_trash.svg"></td>
+        </tr>
+    </tbody>
+
+    <tbody>
+        <tr>
+            <td>5</td>
+            <td>PKM001001</td>
+            <td>Charmander Smiley</td>
+            <td>POKEMON</td>
+            <td><img class="product__icon" src="../images/icons/edit_pencil.svg"></td>
+            <td><img  class="product__icon"  src="../images/icons/delete_trash.svg"></td>
+        </tr>
+    </tbody>
+
+    <tbody>
+        <tr>
+            <td>6</td>
+            <td>PKM001002</td>
+            <td>Dragonite Hi!</td>
+            <td>POKEMON</td>
+            <td><img class="product__icon" src="../images/icons/edit_pencil.svg"></td>
+            <td><img  class="product__icon"  src="../images/icons/delete_trash.svg"></td>
+        </tr>
+    </tbody>
+
+    <tbody>
+        <tr>
+            <td>7</td>
+            <td>PKM001003</td>
+            <td>Pidgeotto Flying</td>
+            <td>POKEMON</td>
+            <td><img class="product__icon" src="../images/icons/edit_pencil.svg"></td>
+            <td><img  class="product__icon"  src="../images/icons/delete_trash.svg"></td>
+        </tr>
+    </tbody>
+
+    <tbody>
+        <tr>
+            <td>8</td>
+            <td>PKM001004</td>
+            <td>Pikachu Smiley</td>
+            <td>POKEMON</td>
+            <td><img class="product__icon" src="../images/icons/edit_pencil.svg"></td>
+            <td><img  class="product__icon"  src="../images/icons/delete_trash.svg"></td>
+        </tr>
+    </tbody>
+
+    <tbody>
+        <tr>
+            <td>9</td>
+            <td>PKM001005</td>
+            <td>Vulpix Fancy</td>
+            <td>POKEMON</td>
+            <td><img class="product__icon" src="../images/icons/edit_pencil.svg"></td>
+            <td><img  class="product__icon"  src="../images/icons/delete_trash.svg"></td>
+        </tr>
+    </tbody>
+
+    <tbody>
+        <tr>
+            <td>10</td>
+            <td>HPT00101</td>
+            <td>Harry Potter & Hegwid</td>
+            <td>HARRY POTTER</td>
+            <td><img class="product__icon" src="../images/icons/edit_pencil.svg"></td>
+            <td><img  class="product__icon"  src="../images/icons/delete_trash.svg"></td>
+        </tr>
+    </tbody>
+
+
+    <tbody>
+        <tr>
+            <td>11</td>
+            <td>HPT001002</td>
+            <td>Hermanione Ball Dress</td>
+            <td>HARRY POTTER</td>
+            <td><img class="product__icon" src="../images/icons/edit_pencil.svg"></td>
+            <td><img  class="product__icon"  src="../images/icons/delete_trash.svg"></td>
+        </tr>
+    </tbody>
+
+    <tbody>
+        <tr>
+            <td>12</td>
+            <td>HPT001003</td>
+            <td>Luna Lovegood Lion Mask</td>
+            <td>HARRY POTTER</td>
+            <td><img class="product__icon" src="../images/icons/edit_pencil.svg"></td>
+            <td><img  class="product__icon"  src="../images/icons/delete_trash.svg"></td>
+        </tr>
+    </tbody>
+
+    <tbody>
+        <tr>
+            <td>13</td>
+            <td>HPT001004</td>
+            <td>Snape Patronus</td>
+            <td>HARRY POTTER</td>
+            <td><img class="product__icon" src="../images/icons/edit_pencil.svg"></td>
+            <td><img  class="product__icon"  src="../images/icons/delete_trash.svg"></td>
+        </tr>
+    </tbody>
+    -->
+
+</table>
+
+</main>
+
+
+    <footer class="footer">
+          <%- include('partials/footer.ejs') %>
+     </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+  <script>
+    new Glide('.glide', {
+        type: 'carousel',
+        startAt: 0,
+        perView: 3,
+        gap : 30,
+        breakpoint:{
+          991: {
+             perView: 2
+          },
+          768:{
+            perView: 1
+          }
+        }
+    }).mount();
+  </script>
+
+</body>
+</html>

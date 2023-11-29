@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <%- include('partials/head.ejs') %>
+    <link rel="stylesheet" href="../css/item.css" />
+    <link rel="stylesheet" href="./css/slider.css" />
+ 
+  </head>
+  <body>
+    <header>
+      <%- include('partials/header.ejs') %>
+    </header>
+
+    <main>
+      <article class="container coleccion">
+        <img class="item__img"
+          src="../images/star-wars/baby-yoda-1.webp"
+          onmouseout="this.src='../images/star-wars/baby-yoda-1.webp'"
+          onmouseover="this.src='../images/star-wars/baby-yoda-box.webp'"
+          alt="baby yoda"
+        />
+        <div class="item">
+          <h4 class="item__subTitulo">STAR WARS</h4>
+          <h1 class="item__titulo">BABY YODA BLUEBALL</h1>
+          <p class="item__parrafo">
+            Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga,
+            edición limitada.
+          </p>
+          <p class="item__precio">$1799,99</p>
+          <form class="item__form">
+            <input type="number" id="cantidad" value="0" min="0" />
+            <div class="item__from__btn">
+              <button type="button" id="add">+</button>
+              <button type="button" id="subtract">-</button>
+            </div>
+            <button class="btn_rojo rectangula-ch" type="submit"> Agregar al Carrito </button> 
+          </form>
+          <p class="card-item__promo"><a href="#">Ver métodos de pago</a> - 3 cuotas sin interés</p>
+        </div>
+      </article>
+
+
+      <section class="slider container glide">
+        <h2 class="slider__tittle">PRODUCTOS RELACIONADOS</h2>
+        <div class="glide__track" data-glide-el="track">
+          <!--esto es un carousel-->
+
+          <ul class="slider__items glide__slides">
+            <li class="slider__item glide__slide">
+              <article class="card-item">
+                <a class="card-item__link" href="">
+                  <picture class="card-item__cover">
+                    <span class="card-item__tag">NUEVO</span>
+                    <img
+                      class="card-item__img--front"
+                      src="./images/star-wars/trooper-1.webp"
+                      alt="imagen trooper-1"
+                    />
+                    <img
+                      class="card-item__img--back"
+                      src="./images/star-wars/trooper-box.webp"
+                      alt="imagen trooper-1"
+                    />
+                  </picture>
+                  <div class="card-item__content">
+                    <h4 class="card-item__licence">STAR WARS</h4>
+                    <h3 class="card-item__name">STORMTROOPER LIGHTSABER</h3>
+                    <p class="card-item__price">$1799,99</p>
+                    <p class="card-item__promo">3 Cuotas sin interés</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+
+            <li class="slider__item glide__slide">
+              <article class="card-item">
+                <a class="card-item__link" href="">
+                  <picture class="card-item__cover">
+                    <span class="card-item__tag">NUEVO</span>
+                    <img
+                      class="card-item__img--front"
+                      src="./images/pokemon/pidgeotto-1.webp"
+                      alt="imagen pidgeotto-1"
+                    />
+                    <img
+                      class="card-item__img--back"
+                      src="./images/pokemon/pidgeotto-box.webp"
+                      alt="imagen pidgeotto-1"
+                    />
+                  </picture>
+                  <div class="card-item__content">
+                    <h4 class="card-item__licence">POKEMON</h4>
+                    <h3 class="card-item__name">PIDGEOTTO</h3>
+                    <p class="card-item__price">$1799,99</p>
+                    <p class="card-item__promo">3 Cuotas sin interés</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+
+            <li class="slider__item glide__slide">
+              <article class="card-item">
+                <a href="">
+                  <picture class="card-item__cover">
+                    <span class="card-item__tag">NUEVO</span>
+                    <img
+                      class="card-item__img--front"
+                      src="./images/harry-potter/harry-1.webp"
+                      alt="harry potter-1"
+                    />
+                    <img
+                      class="card-item__img--back"
+                      src="./images/harry-potter/harry-box.webp"
+                      alt="harry potter-1 en caja"
+                    />
+                  </picture>
+                  <div class="card-item__content">
+                    <h4 class="card-item__licence">HARRY POTTER</h4>
+                    <h3 class="card-item__name">LUNA LOVEGOOD LION MASK</h3>
+                    <p class="card-item__price">$1799,99</p>
+                    <p class="card-item__promo">3 Cuotas sin interés</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+          </ul>
+        </div>
+        <div class="glide__arows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow-left" data-glide-dir="<"><iconify-icon icon="cil:chevron-left"></iconify-icon></button>
+          <button  class="glide__arrow glide__arrow-right" data-glide-dir=">"><iconify-icon icon="cil:chevron-right"></iconify-icon></button>
+        </div>
+      </section>
+
+      
+    </main>
+
+    <footer class="footer">
+          <%- include('partials/footer.ejs') %>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+    <script>
+      new Glide('.glide', {
+          type: 'carousel',
+          startAt: 0,
+          perView: 3,
+          gap : 30,
+          breakpoint:{
+            991: {
+               perView: 2
+            },
+            768:{
+              perView: 1
+            }
+          }
+      }).mount();
+    </script>
+  </body>
+</html>

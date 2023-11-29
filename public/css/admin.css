@@ -1,0 +1,81 @@
+
+
+.loupe {
+    width: 30.8px;
+    height: 30.76px;
+    margin: 10px;
+}
+
+.input {
+  width: 430px;
+  height: 44px;
+  margin: 20px 30px;
+  
+}
+.agregar__add {
+    margin-left: 30px;
+    width: 50%;
+}
+.agregar__text {
+    font-size: 2.4rem;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+      
+}
+
+.main-container {
+    margin-left: 110px;
+    width: 1120px;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+
+}
+
+h1 {
+    font-size: 42px;
+}
+
+.item-list {
+    width: 1126px;
+    height: 928,95px;
+    font-weight:500;
+    font-size: 24px;
+    line-height: 60.85px;
+    letter-spacing: 4%;
+}
+
+
+.add-container{
+/* Group 63 */
+
+display: flex;
+width: 198px;
+height: 52px;
+left: 1038px;
+top: 260.28px;
+align-items: center;
+justify-content: end;
+font-weight: 700;
+font-size: 24px;
+line-height: 29,05px;
+letter-spacing: 4%;
+align-items: right;
+
+
+}
+
+.product-list-tittle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ .product__icon  {
+
+    width: 60%;
+}

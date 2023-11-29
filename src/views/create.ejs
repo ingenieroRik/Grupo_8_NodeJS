@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+      <%- include('partials/head.ejs') %>
+        <link rel="stylesheet" href="../css/item.css" />
+        
+      </head>
+  <body>
+    <header>
+      <%- include('partials/header.ejs') %>
+    </header>
+
+    <main class="container contenedor mw-80">
+        <h1 class="titulo-form">CREAR NUEVO ITEM</h1>
+        <form class="contenido-formulario--latizq">
+            <div class="espacio__form">
+                <label class="formulario__label__ligth" for="categoria">Categoría:</label>
+                <select class="form__select" name="categoria" id="categoria" required>
+                    <option value="" disabled selected>--Seleccionar--</option>
+                    <option value="1">a definir</option>
+                    <option value="2">a definir</option>
+                    <option value="3">a definir</option>
+                </select>
+                <label class="formulario__label__ligth" for="licencia">Licencia:</label>
+                <select class="form__select" name="licencia" id="licencia" required>
+                    <option value="" disabled selected>--Seleccionar--</option>
+                    <option value="1">a definir</option>
+                    <option value="2">a definir</option>
+                    <option value="3">a definir</option>
+                </select>            
+            </div>
+            <div class="espacio__form">
+                <label class="formulario__label" for="nombre">Nombre del producto:</label>
+                <input class="formulario__input wl" type="text" id="nombre" placeholder="Kakashi Hatake Shippuden Saga" required>
+            </div>
+            <textarea id="descripcion" cols="30" rows="10" placeholder="Descripción del producto"></textarea>
+            <div class="prueba">
+              <div class="espacio__form">
+                  <label class="formulario__label" for="sku">SKU:</label>
+                  <input class="formulario__input wm" type="text" placeholder="SSK111AB001">
+                  <label class="formulario__label" for="precio">Precio:</label>
+                  <input class="formulario__input wm" type="number" min="0" placeholder="$0.000,00">
+                  <label class="formulario__label" for="stock">Stock:</label>
+                  <input class="formulario__input ws" type="number" id="stock" min="0" placeholder="0">
+              </div>
+              <div class="espacio__form">
+                  <label class="formulario__label" for="descuento">Descuento:</label>
+                  <input class="formulario__input ws" type="number" id="descuento" min="0" max="100" step="5" placeholder="0%">
+                  <label class="formulario__label" for="cuotas">Cuotas:</label>
+                  <select class="form__select" name="cuotas" id="cuotas" required>
+                      <option value="" disabled selected>Elegir cuotas</option>
+                      <option value="1">a definir</option>
+                      <option value="2">a definir</option>
+                      <option value="3">a definir</option>
+                  </select>
+              </div>
+            </div>
+            <div class="espacio__form">
+                <label class="formulario__label" for="imagen">Imagen:</label>
+                <input type="file" name="imagen" id="imagen" accept="image/jpeg, image/png">
+            </div>
+            <div class="espacio__form">
+                <input class="btn_rojo rectangula-ch" type="submit" value="Agregar Producto">
+                <input id="limpiar" class="btn_rojo rectangula-ch" type="reset" value="Limpiar">
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer">
+             <%- include('partials/footer.ejs') %>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+      <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <%- include('partials/head.ejs') %>
+    <link rel="stylesheet" href="../css/cart.css" />
+   
+  </head>
+
+  <body>
+
+    <header>
+      <%- include('partials/header.ejs') %>
+      
+    </header>
+
+    <main class="cart container">
+      
+      <section class="cart_box">
+          <h1 class="cart__tittle">CARRITO DE COMPRAS</h1>
+          <p class="cart__text"></p>
+    
+      </section>   
+      
+        
+
+
+            <div class="nav__detalle">
+
+              <div>
+                <h2 class="cart__nav-detalle">DETALLE DEL PRODUCTO</h2>
+              </div>
+              <div class="cart__nav-cantidad">
+                <h2>CANTIDAD</h2>
+              </div>
+              <div class="cart__nav-total">
+                <h2>TOTAL</h2>
+              </div>
+
+            </div>
+          
+        <div class="card__detalle" >
+            <div>
+                  <img class="card_image"  style="height: 80px;"     src="../images/star-wars/baby-yoda-1.webp" />
+            </div>
+            <div class="card_description">
+                  <h2>BABY YODA BLUEBALL</h2>
+                  <p>STAR WARS</p>
+                  <p>Precio unitario $1799,99</p>
+            </div>
+          
+            <div class="cart__card-cantidad">
+                <div >
+                    <input  class="cart__item-cantidad" type="number" placeholder="2" />
+                </div>
+
+                <div class="cart__sum-rest">
+                  <button class="cart__btn-sum-rest">+</button>
+                  <button class="cart__btn-sum-rest">-</button>
+                </div>
+            </div>
+            <div>
+                <p>$3599,99</p>
+            </div>
+
+            <div>
+              <button class="card__image-button"><p class="cart__card-close">X</p></button>
+            </div>
+           
+        </div>
+
+
+
+
+
+
+
+          <div class="card__detalle" >
+            <div>
+                  <img class="card_image"  style="height: 80px;"     src="../images/pokemon/pidgeotto-1.webp" />
+            </div>
+            <div class="card_description">
+                  <h2>PIDGEOTTO</h2>
+                  <p>POKEMON</p>
+                  <p>Precio unitario $1899,99</p>
+            </div>
+          
+            <div class="cart__card-cantidad">
+              <div >
+                  <input  class="cart__item-cantidad" type="number" placeholder="2" />
+              </div>
+
+              <div class="cart__sum-rest">
+                <button class="cart__btn-sum-rest">+</button>
+                <button class="cart__btn-sum-rest">-</button>
+              </div>
+          </div>
+            <div>
+                <p>$1899,99</p>
+            </div>
+
+            <div>
+                <button class="card__image-button"><p class="cart__card-close">X</p></button>
+            </div>
+
+        </div>
+
+
+
+
+    <!--falta seccion de resumen del carrito-->
+
+    <section class="cart__resumen-card">
+
+      <div class="cart__resumen">
+        <h2>RESUMEN</h2>
+        <p class="coleccion__text"></p>
+      </div>
+
+      <div  class="resumen__detalle">
+
+          <div class="resumen__item">
+            <p class="resumen__item-p">CANTIDAD DE ELEMENTOS</p>
+            <span class="resumen__item-span" >3</span>
+          </div>
+
+          <div class="resumen__item">
+            <p  class="resumen__item-p">SUBTOTAL</p>
+            <span class="resumen__item-span" >$5.399,97</span>
+          </div>
+
+          <div class="resumen__item">
+            <p class="resumen__item-p">ENVIO</p>
+            <span class="resumen__item-span" >$0,00</span>
+          </div>
+
+
+          <div>
+            <p class="coleccion__text "></p>
+          </div> 
+
+          <div class="resumen__item">       
+            <p class="resumen__item-p">TOTAL</p>
+            <span class="resumen__item-span" >$5.399,97</span>
+          </div>
+
+      </div>
+
+
+      <div class="cart__pagar">
+          <button class="cart__btn-pagar" >IR A PAGAR</button>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+       <%- include('partials/footer.ejs') %>
+  </footer>
+  </body>
+</html>

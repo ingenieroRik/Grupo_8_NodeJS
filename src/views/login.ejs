@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    
+  
+    <link rel="stylesheet" href="./css/login-contact.css" />
+
+    <%- include('partials/head.ejs') %>
+  </head>
+  <body>
+    <header>
+      <%- include('partials/header.ejs') %>
+    </header>
+
+    <main class="container">
+        <h1 class="titulo-form centrar-txt">INGRESAR A MI CUENTA</h1>
+        <form class="register__form">
+            <div class="form__box--grid">
+                <label class="form__label" for="mail">Email:</label>
+                <input class="form__input" type="email" id="mail" placeholder="grupo8@correo.com">
+            </div>
+            <div class="form__box--grid">
+                <label class="form__label" for="password">Contraseña:</label>
+                <input class="form__input" type="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+            </div>
+            <div class="form__submission">
+                <input class="btn_rojo rectangula-g" type="submit" value="Ingresar">
+                <div class="login__recordame">
+                  <input type="checkbox" id="recordame">
+                  <label for="recordame">Recordarme</label>
+                </div>
+            </div>
+        </form>
+        <p class="login__olvide-clave" href="#"><a href="#">Olvidé mi contraseña</a></p>
+    </main>
+
+    <footer class="footer">
+        <%- include('partials/footer.ejs') %>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+  </body>
+</html>
