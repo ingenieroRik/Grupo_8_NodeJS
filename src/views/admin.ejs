@@ -46,27 +46,22 @@
     </tr>
 </thead>
     
-    <tbody>
-        <tr>
-            <td>1</td>
-            <td>STW001001</td>
-            <td>Baby Yoda Blueball</td>
-            <td>STAR WARS</td>
-            <td><img class="product__icon" src="../images/icons/edit_pencil.svg"></td>
-            <td><img  class="product__icon"  src="../images/icons/delete_trash.svg"></td>
-        </tr>
-    </tbody>
+   
 
     <tbody>
+        <% for (let i=0; i < products.length; i++ ) { %>
+
         <tr>
-            <td>2</td>
-            <td>STW001002</td>
-            <td>Boba Fett Fighter</td>
-            <td>STAR WARS</td>
+            <td><%= products[i].id %></td>
+            <td><%= products[i].codigo %></td>
+            <td><%= products[i].nombreProducto %></td>
+            <td><%= products[i].categoria %></td>
             <td><img class="product__icon" src="../images/icons/edit_pencil.svg"></td>
             <td><img  class="product__icon"  src="../images/icons/delete_trash.svg"></td>
         </tr>
     </tbody>
+       <% } %>  
+    <!--
 
     <tbody>
         <tr>
@@ -189,6 +184,7 @@
             <td><img  class="product__icon"  src="../images/icons/delete_trash.svg"></td>
         </tr>
     </tbody>
+    -->
 
 </table>
 

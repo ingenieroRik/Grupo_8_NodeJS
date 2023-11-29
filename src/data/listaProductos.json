@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "codigo": "STW001001",
+        "nombreProducto": "Baby Yoda Blueball",
+        "categoria" : "STAR WARS"
+      
+    },
+    {
+        "id": 2,
+        "codigo": "STW001002",
+        "nombreProducto": "Luke Skywalker & Grogu",
+        "categoria" : "STAR WARS"
+    },
+    {
+        "id": 3,
+        "codigo": "STW001003",
+        "nombreProducto": "Luke Skywalker & Grogu",
+        "categoria" : "STAR WARS"
+    },
+    {
+        "id": 4,
+        "codigo": "STW001004",
+        "nombreProducto": "Storm Trooper Lightsaber",
+        "categoria" : "STAR WARS"
+    },
+    {
+        "id": 5,
+        "codigo": "PKM01001",
+        "nombreProducto": "Charmander Smiley",
+        "categoria" : "POKEMON"
+    },
+    {
+        "id": 6,
+        "codigo": "PKM01002",
+        "nombreProducto": "Dragonite Hi!",
+        "categoria" : "POKEMON"
+    },
+    {
+        "id": 7,
+        "codigo": "PKM01003",
+        "nombreProducto": "Pidgeotto Flying",
+        "categoria" : "POKEMON"
+    },
+    {
+        "id": 8,
+        "codigo": "PKM01004",
+        "nombreProducto": "Pikachu Smiley",
+        "categoria" : "POKEMON"
+    },
+    {
+        "id": 9,
+        "codigo": "PKM01005",
+        "nombreProducto": "Vulpix Fancy",
+        "categoria" : "POKEMON"
+    },
+    {
+        "id": 10,
+        "codigo": "HTP00101",
+        "nombreProducto": "Harry Potter & Hegwid",
+        "categoria" : "HARRY POTTER"
+    },
+    {
+        "id": 11,
+        "codigo": "HTP0102",
+        "nombreProducto": "Hermanione Ball Dress",
+        "categoria" : "HARRY POTTER"
+    },
+    {
+        "id": 12,
+        "codigo": "HTP0103",
+        "nombreProducto": "Luna Lovegood Lion Mask",
+        "categoria" : "HARRY POTTER"
+    },
+
+    {
+        "id": 13,
+        "codigo": "HTP0104",
+        "nombreProducto": "Snape Patronus",
+        "categoria" : "HARRY POTTER"
+    }
+]
