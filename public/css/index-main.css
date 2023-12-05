@@ -173,3 +173,11 @@
         font-size: var(--font-small);
     }
 }
+
+@media (max-width: 412px){
+    .container {
+        flex-direction: column;
+      }
+      
+  
+}

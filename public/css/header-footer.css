@@ -15,10 +15,7 @@
   
     --fuentePrincipal: 'Inter', sans-serif;
     --fuenteSecundaria: 'Raleway', sans-serif;
-    
-   /* tipografia */
-   --base-font: 'Inter', sans-serif;
-   --alternative-font:'Raleway', sans-serif;
+
 
     /* PESO TIPOGRAFICO */
         
@@ -28,17 +25,6 @@
     --bold: 700;
 
     /* paleta de colores */
-
-    --gris: #30343F;
-    --gris-claro: #4F4F4F;
-    --rojo: #FF3333;
-    --azul: #1D84B5;
-    --blanco: #fff;
-    --negro: #000;
-
-    --negro-claro:#1f1f1f;
-    --blanco-claro: #fafaff;
-    
     --primary-solid:#ff3333;
     --primary-900:rgba(255, 51, 51, 0.9);
     --primary-500:rgba(255, 51, 51, 0.5);
@@ -58,7 +44,10 @@
     --light-bg-solid: #fafaff;
     --light-font-solid:#ffffff;
 
- 
+    /* tipografia */
+    --base-font: 'Inter', sans-serif;
+    --alternative-font:'Raleway', sans-serif;
+
     /* font size */
     --font-display: 4.6em;
     --font-jumbo: 3.8em;

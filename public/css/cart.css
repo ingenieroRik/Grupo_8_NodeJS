@@ -115,12 +115,13 @@ container {
     font-size: var(--font-small);
     font-weight: 900;   
    }
+
 .cart__pagar {
     align-self: flex-end;
 }
 .cart__btn-pagar{ 
-    margin: 10px 0 10px 0;
-    width: 400px;
+    margin: 30px 0 30px 0;
+    width: 380px;
     border: none;
     background-color: var(--primary-solid);
     color: var(--light-font-solid);
