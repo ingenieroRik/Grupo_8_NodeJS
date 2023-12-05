@@ -53,7 +53,6 @@ h1 {
 
 .add-container{
 /* Group 63 */
-
 display: flex;
 width: 198px;
 height: 52px;
@@ -66,8 +65,6 @@ font-size: 24px;
 line-height: 29,05px;
 letter-spacing: 4%;
 align-items: right;
-
-
 }
 
 .product-list-tittle{
@@ -76,6 +73,63 @@ align-items: right;
     justify-content: space-between;
 }
  .product__icon  {
-
     width: 60%;
 }
+
+
+@media (max-width: 802px){
+    .container {
+      flex-direction: column;
+
+    }
+    h1 {
+    font-size: 24px;
+    margin-left: 15px;
+    }
+   .item-list {
+    font-size: 12px;
+    line-height: 30.85px;
+    letter-spacing: 2%;
+    width: 802px;
+    margin-left: 10px;
+    }
+    .product__icon  {
+        width: 30%;
+    }
+    .add-container{
+       font-size: 12px;
+       line-height: 9,05px;
+       letter-spacing: 2%;
+    }
+    .agregar__text {
+        font-size: 1.4rem;
+    }
+    .agregar__add {
+        margin-left: 20px;
+        width: 25%;
+    }
+    .product-list-tittle{
+        width: 800px;
+    }
+  }
+  @media (max-width: 412px){
+    
+    .item-list {    
+        width: 412px;  
+        margin-left: 10px;
+        font-size: 10px;
+        }
+    h1 {
+        font-size: 12px;
+        }
+        .agregar__text {
+            font-size: 1rem;
+        }
+        .agregar__add {
+            margin-left: 10px;
+            width: 20%;
+        }
+        .product-list-tittle{
+            width: 400px;
+        }
+  }

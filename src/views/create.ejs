@@ -7,41 +7,51 @@
       </head>
   <body>
     <header>
-      <%- include('partials/header.ejs') %>
+      <%- include('partials/headerAdmin.ejs') %>
     </header>
 
-    <main class="container contenedor mw-80">
+    <main class="container">
         <h1 class="titulo-form">CREAR NUEVO ITEM</h1>
         <form class="contenido-formulario--latizq">
-            <div class="espacio__form">
-                <label class="formulario__label__ligth" for="categoria">Categoría:</label>
-                <select class="form__select" name="categoria" id="categoria" required>
-                    <option value="" disabled selected>--Seleccionar--</option>
-                    <option value="1">a definir</option>
-                    <option value="2">a definir</option>
-                    <option value="3">a definir</option>
-                </select>
-                <label class="formulario__label__ligth" for="licencia">Licencia:</label>
-                <select class="form__select" name="licencia" id="licencia" required>
-                    <option value="" disabled selected>--Seleccionar--</option>
-                    <option value="1">a definir</option>
-                    <option value="2">a definir</option>
-                    <option value="3">a definir</option>
-                </select>            
+            <div class="espacio__form form1">
+                <div class="form1__label">
+                    <label class="formulario__label__ligth" for="categoria">Categoría:</label>
+                    <select class="form__select" name="categoria" id="categoria" required>
+                        <option value="" disabled selected>--Seleccionar--</option>
+                        <option value="1">a definir</option>
+                        <option value="2">a definir</option>
+                        <option value="3">a definir</option>
+                    </select>
+                </div>
+                <div class="form1__label">
+                    <label class="formulario__label__ligth" for="licencia">Licencia:</label>
+                    <select class="form__select" name="licencia" id="licencia" required style="margin-left: 10px;">
+                        <option value="" disabled selected>--Seleccionar--</option>
+                        <option value="1">a definir</option>
+                        <option value="2">a definir</option>
+                        <option value="3">a definir</option>
+                    </select>
+                </div>           
             </div>
             <div class="espacio__form">
                 <label class="formulario__label" for="nombre">Nombre del producto:</label>
                 <input class="formulario__input wl" type="text" id="nombre" placeholder="Kakashi Hatake Shippuden Saga" required>
             </div>
-            <textarea id="descripcion" cols="30" rows="10" placeholder="Descripción del producto"></textarea>
+            <textarea id="descripcion" cols="20" rows="10" placeholder="Descripción del producto"></textarea>
             <div class="prueba">
-              <div class="espacio__form">
-                  <label class="formulario__label" for="sku">SKU:</label>
-                  <input class="formulario__input wm" type="text" placeholder="SSK111AB001">
-                  <label class="formulario__label" for="precio">Precio:</label>
-                  <input class="formulario__input wm" type="number" min="0" placeholder="$0.000,00">
-                  <label class="formulario__label" for="stock">Stock:</label>
-                  <input class="formulario__input ws" type="number" id="stock" min="0" placeholder="0">
+              <div class="espacio__form form1">
+                  <div class="espacio__form">
+                        <label class="formulario__label" for="sku">SKU:</label>
+                        <input class="formulario__input wm" type="text" placeholder="SSK111AB001">
+                  </div>
+                  <div class="espacio__form">
+                    <label class="formulario__label" for="precio">Precio:</label>
+                    <input class="formulario__input wm" type="number" min="0" placeholder="$0.000,00">
+                </div>
+                <div class="espacio__form">
+                    <label class="formulario__label" for="stock">Stock:</label>
+                    <input class="formulario__input ws" type="number" id="stock" min="0" placeholder="0">
+                </div>
               </div>
               <div class="espacio__form">
                   <label class="formulario__label" for="descuento">Descuento:</label>

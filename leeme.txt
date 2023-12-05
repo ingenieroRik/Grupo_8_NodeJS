@@ -1,0 +1,11 @@
+modificaciones de la mision 6:
+Para hacer mas ágil acceder a /admin /edit /create en la vista de login se accede
+a la cuenta del administrador con el correo 
+                 administrador@administrador.com 
+    y la clave admin  
+los administradores y usuarios estan en Datos/usuarios.json
+Si las credenciales son las de administrador se accede al pagina del administrador /admin  
+cuando se accede el header es el headerAdmin que tiene los links a /create y /edit  
+la opcion LOGOUT lleva a /.
+Se deja un solo archivo json de productos.  
+Se hacen responsive edit y create.

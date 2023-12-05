@@ -7,10 +7,10 @@
 </head>
 <body>
     <header>
-      <%- include('partials/header.ejs') %>
+      <%- include('partials/headerAdmin.ejs') %>
     </header>
 
-<main class="main-container">
+<main class="container">
 
 
 
@@ -25,15 +25,11 @@
     
     <h1>LISTA DE PRODUCTOS</h1>
     
-    <div class="add-container">
+        <div class="add-container">
     
-    <h2 class="agregar__text">AGREGAR</h2>
-    
-  
-        <img  class="agregar__add"  src="../images/icons/+icon admin.png"/>
-        
-    
-    </div>
+             <h2 class="agregar__text">AGREGAR</h2>
+                <a href="/create"><img  class="agregar__add"  src="../images/icons/+icon admin.png"/></a>
+        </div>
     
     </div>
 
@@ -56,8 +52,8 @@
             <td><%= products[i].codigo %></td>
             <td><%= products[i].nombreProducto %></td>
             <td><%= products[i].categoria %></td>
-            <td><img class="product__icon" src="../images/icons/edit_pencil.svg"></td>
-            <td><img  class="product__icon"  src="../images/icons/delete_trash.svg"></td>
+            <td><a href="/edit"><img class="product__icon" src="../images/icons/edit_pencil.svg" ></a></td>
+            <td><img  class="product__icon"  src="../images/icons/delete_trash.svg" ></td>
         </tr>
     </tbody>
        <% } %>  
@@ -69,7 +65,7 @@
 
 
     <footer class="footer">
-          <%- include('partials/footer.ejs') %>
+          <%- include('partials/footerAdmin.ejs') %>
      </footer>
   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
