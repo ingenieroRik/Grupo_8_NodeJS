@@ -50,6 +50,7 @@
 .btn_rojo{
     background-color: var(--rojo);
     border: none;
+    margin-bottom: 35px;
     color: var(--blanco);
     font-family: var(--fuentePrincipal);
     font-weight: var(--light);
@@ -243,7 +244,7 @@
     padding: 0.8rem 5.2rem;
 }
 
-textarea{
+.contact__text-area{
     width: 83rem;
     height: 20rem;
     padding: var(--spacing-8);
@@ -256,7 +257,7 @@ textarea{
 
 .txt__subtitulo{
     font-family: var(--fuentePrincipal);
-    font-weight: var(--regular);
+    font-weight: var(--regular); 
     font-size: var(--font-medium);
     margin: var(--spacing-12) 0 var(--spacing-68);
 }
@@ -296,11 +297,20 @@ textarea{
         margin-top: 20px;
       
     }
-  
+    .contact__text-area {
+        width: 768px;      
+      }
+      .txt__subtitulo {
+        margin-left: 5px;
+        margin-right: 5px;
+      }
     .form1 {
         display: flex;
         flex-direction: column;
         justify-content: space-around;    
+    }
+    .form__select {
+        margin-top: 30px;
     }
    
 }
@@ -313,6 +323,7 @@ textarea{
     }
     .titulo-form{
         font-size: 32px;
+        margin-top: var(--spacing-28);
     }
     #descripcion {
         width:400px;
@@ -322,6 +333,11 @@ textarea{
   
         font-size: 8px; 
     }
+    .contact__text-area {
+      width: 390px;
+       
+    }
+   
   
  
 }
