@@ -3,6 +3,7 @@
   <head>
     <%- include('partials/head.ejs') %>
     <link rel="stylesheet" href="./css/slider.css" />
+   
   </head>
   <body>
     <header>
@@ -20,7 +21,7 @@
         </article>
       </section>
 
-      <% for(let i=0 ; i < coleccion.length  ; i++) {%>
+      <% for(let i=0 ; i < 3  ; i++) {%>
 
       <section class="coleccion container">
         <article class="coleccion__content">
@@ -48,7 +49,7 @@
 
           <ul class="slider__items glide__slides">
 
-            <% for(let i=0; i < allFunkos.length; i++) {%>
+            <% for(let i=0; i < coleccion.length; i++) {%>
 
               <li class="slider__item glide__slide">
                 <article class="card-item">
@@ -57,20 +58,20 @@
                       <span class="card-item__tag">NUEVO</span>
                       <img
                         class="card-item__img--front"
-                        src="<%= allFunkos[i].imgfront %>" 
+                        src="<%= coleccion[i].imgfront %>" 
                         alt="imagen"
                       />
                       <img
                         class="card-item__img--back"
-                        src="<%= allFunkos[i].imgback %>"
+                        src="<%= coleccion[i].imgback %>"
                         alt="imagen"
                       />
                     </picture>
                     <div class="card-item__content">
-                      <h4 class="card-item__licence"><%= allFunkos[i].licence %></h4>
-                      <h3 class="card-item__name"><%= allFunkos[i].name %></h3>
-                      <p class="card-item__price"><%= allFunkos[i].price %></p>
-                      <p class="card-item__promo"><%= allFunkos[i].promo %></p>
+                      <h4 class="card-item__licence"><%= coleccion[i].licence %></h4>
+                      <h3 class="card-item__name"><%= coleccion[i].name %></h3>
+                      <p class="card-item__price"><%= coleccion[i].price %></p>
+                      <p class="card-item__promo"><%= coleccion[i].promo %></p>
                     </div>
                   </a>
                 </article>
@@ -108,5 +109,6 @@
           }
       }).mount();
     </script>
+   
   </body>
 </html>

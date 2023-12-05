@@ -1,0 +1,16 @@
+[
+{
+    "id": 1,
+    "nombre": "Ricardo",
+    "email": "ricardo@hotmail.com",
+    "clave": "admin",
+    "rol": "admin"
+   },
+   {
+    "id": 2,
+    "nombre": "administrador",
+    "email": "administrador@administrador.com",
+    "clave": "admin",
+    "rol": "admin"
+   }
+  ]

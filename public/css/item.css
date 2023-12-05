@@ -90,32 +90,22 @@
         }
     }
 }
-
 .card-item__promo>a{
     text-decoration: underline 2px;
 }
 
-
-
 /* FIN ESTILOS ARTICULO ITEM */
 
 /** PAGINA LOGIN **/
-.contenedor{
-    margin: var(--spacing-128) auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;  
 }
 
-.mw-80{
-    max-width: 80%;
-}
-
-.titulo-form{
-   
+.titulo-form{  
     margin: var(--spacing-36) 0;
-
+    
+    text-align: center;
     font-family: var(--alternative-font);
     font-size: var(--font-display);
     font-weight: 500;
@@ -137,9 +127,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
     gap: var(--spacing-20);
-    margin-right:auto;
+   
 }
 
 .contenido-formulario--centro .casilla__formulario{
@@ -152,6 +142,7 @@
 .espacio__form{
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-bottom: var(--spacing-20);
     gap: var(--spacing-16);
 }
@@ -181,7 +172,7 @@
 }
 
 .wl{
-    width: 35%;
+    width: 50%;
 }
 .wm{
     width: 13rem;
@@ -215,7 +206,7 @@
 .form__select{
     border: 2px solid var(--negro);
     border-radius: 5px;
-    width: 100%;
+    width: 60%;
     padding: 1rem 1rem;
     font-family: var(--fuentePrincipal);
     font-weight: var(--medium);
@@ -224,14 +215,10 @@
     &:invalid{
         color: var(--gris-mas-claro);
     }
+    
 }
 
-.espacio__form .form__select{
-    margin-right: 3rem;
-    &:last-child{
-        margin-right: 0;
-    }
-}
+
 
 .prueba{
     width: 80%;
@@ -287,33 +274,54 @@ textarea{
 
 
 @media (max-width: 802px){
-    .contenedor{
+    .container{
         justify-content: center;
         gap: var(--spacing-20);
         margin: auto;
     }
     .espacio__form{
-       display: table-column;
+       display: table-column; 
+       margin-left: 0px; 
+       margin-bottom: var(--spacing-20);
+       width: auto;
     }
   
-    
-
-    .contact__text-area {
-        width: 600px;
-         
+    #descripcion {
+        width: auto;
     }
+    .formulario__input {
+        font-size: var(--font-small);
+    }
+    .form1__label {
+        margin-top: 20px;
+      
+    }
+  
+    .form1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;    
+    }
+   
 }
-@media (max-width: 530px){
-    .contenedor{
-      font-size: var(--font-small);
+@media (max-width: 412px){
+    .container{
+      font-size: var(--font-xsmall);
       padding: 0 ;
       padding-bottom: 15px;
+     
     }
-    
-
-    .contact__text-area {
-        width: 400px;
-         
+    .titulo-form{
+        font-size: 32px;
     }
-
+    #descripcion {
+        width:400px;
+    }
+   
+    .espacio__form{
+  
+        font-size: 8px; 
+    }
+  
+ 
 }

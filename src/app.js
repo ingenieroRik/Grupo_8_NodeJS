@@ -1,6 +1,8 @@
 const express = require ("express");
 const path = require('path');
 const app = express();
+// MUY IMPORTANTE!!!  para usar el metodo POST
+app.use(express.urlencoded({ extended: true })); // me volvio loco esto, no mandaba el body
 
 const mainRoutes = require ("./routes/mainRoutes.js");
 const shopRoutes = require ("./routes/shopRoutes.js");

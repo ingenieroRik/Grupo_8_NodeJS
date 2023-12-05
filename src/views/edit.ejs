@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funkoshop Edit</title>
-    <link rel="stylesheet" href="../css/header-footer.css">
+    <%- include('partials/head.ejs') %>
+  
     <link rel="stylesheet" href="../css/edit.css"/>
 </head>
 <body>
     <header>
-        <%- include('partials/header.ejs') %>
+        <%- include('partials/headerAdmin.ejs') %>
     </header>
 <main >
-    <form class="main-container">
+    <form class="container">
         <h1 class="main-title">EDITAR ITEM</h1>
         <div class="input-container">
             <section class="input-container_category">
@@ -33,8 +31,8 @@
             <h3 class="item">Nombre del producto: </h3>
             <p class="item_name">Kakashi Hatake Shippuden Saga</p>
         </section>
-        <section class="box">
-            <div class="box_text">
+        <section class="">
+            <div class="">
                 <textarea class="description_text" placeholder="Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori."></textarea>
             </div>
         </section>
@@ -83,7 +81,7 @@
                 </a>
             </article>
         </section>
-        <section class="coleccion container">
+        <section class="coleccion">
             <article class="edit_content">
                 <a class="edit_button" href="./shop.html">Modificar Producto</a>
             </article>

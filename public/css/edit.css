@@ -1,6 +1,11 @@
-.main-container {
-    margin-left: 50px;
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
+
 .main-title {
     padding: var(--spacing-20);
     font-size: 42px;
@@ -47,6 +52,7 @@
     flex-flow: row wrap;
     gap: 18px;
     padding: var(--spacing-20);
+    
 }
 .item {
     font-size: var(--font-large);
@@ -85,6 +91,7 @@
     padding: var(--spacing-12);
     font-family: var(--fuentePrincipal); 
     color: var(--negro);
+    text-align: center;
 }
 
 .item_file_text {
@@ -94,6 +101,7 @@
     display: flex;
     flex-direction: row;
 }
+
 .collection_frente {
     display: flex;
     flex-direction: column;
@@ -124,7 +132,7 @@
 }
 
 .edit_content {
-    display: inline-block;
+    display: block;
     flex-direction: row;
     gap: 10px;
     align-items: start;
@@ -136,4 +144,35 @@
     background-color: #FF3333;
     padding: var(--spacing-12);
     color: #FFFFFF;
+}
+@media (max-width: 802px){
+    .container{
+      
+    }
+    .edit_content {
+        text-align: center;
+    }
+    .box_text{
+       
+    }
+    .description_text {
+        width: 100%;
+      
+    }
+   
+}
+@media (max-width: 412px){
+    .input-container, .description{
+      display: block;
+      flex-direction: column;
+     
+    }
+   .description_text {
+    width: 400px;
+    margin-left: 6px;
+   }
+   .main_optionbar {
+    margin-bottom: 20px;
+   }
+ 
 }

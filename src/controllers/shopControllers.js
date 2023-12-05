@@ -6,25 +6,24 @@ const fs = require("fs");
 
 
 //defino la ruta donde estan los archivos Json
-const allFunkosPath = path.join(__dirname, "../data/dataFunkos.json");
+const productosPath = path.join(__dirname, "../data/funkos.json");
 
 
 //leo los archivos json y los guardo en variables
-const funkosJson = JSON.parse(fs.readFileSync(allFunkosPath, "utf-8"));
+const productosJson = JSON.parse(fs.readFileSync(productosPath, "utf-8"));
 
 
 const shopControllers = {
    
     shop2:(req,res) =>  {
 
-        return  res.render('shop2.ejs', { allFunkos : funkosJson });
+        return  res.render('shop2.ejs', { allFunkos : productosJson });
     },
    
     cart: (req,res) => res.render('cart.ejs'),
 
     items: (req,res) => res.render('item.ejs'),
 
-    //edit_item: (req,res) => res.render('item.ejs',{ allFunkos : funkosJson })
 }
 
 module.exports = shopControllers;

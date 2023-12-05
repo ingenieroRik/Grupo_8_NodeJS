@@ -14,19 +14,19 @@
 
     <main class="container">
         <h1 class="titulo-form centrar-txt">INGRESAR A MI CUENTA</h1>
-        <form class="register__form">
+        <form action="/admin" class="register__form" method="POST" >
             <div class="form__box--grid">
-                <label class="form__label" for="mail">Email:</label>
-                <input class="form__input" type="email" id="mail" placeholder="grupo8@correo.com">
+                <label class="form__label"  for="mail">Email:</label>
+                <input class="form__input" type="email" name="email" id="mail" placeholder="grupo8@correo.com">
             </div>
             <div class="form__box--grid">
                 <label class="form__label" for="password">Contraseña:</label>
-                <input class="form__input" type="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                <input class="form__input" type="password"  name="clave"  id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
             </div>
             <div class="form__submission">
-                <input class="btn_rojo rectangula-g" type="submit" value="Ingresar">
+                <button class="btn_rojo rectangula-g" type="submit" value="Ingresar">Ingresar</button>
                 <div class="login__recordame">
-                  <input type="checkbox" id="recordame">
+                  <input type="checkbox" name="recordame" id="recordame">
                   <label for="recordame">Recordarme</label>
                 </div>
             </div>
